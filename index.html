@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===== SEO PRIMARY ===== -->
+<title>随神 — Mémoire du Shintô Sincère | Kannagara no Michi</title>
+<meta name="description" content="Un mémoire sincère sur le shintô primitif : histoire, philosophie, lexique complet et pratique honnête pour ceux qui ressentent un lien profond avec la voie des kami, où qu'ils soient dans le monde.">
+<meta name="keywords" content="shinto, shintô, shintô primitif, kannagara, kami, pratique shinto, shinto hors japon, spiritualité japonaise, misogi, harae, musubi, makoto, kegare, lexique shinto, shinto sincère, voie des kami, shinto nature">
+<meta name="author" content="Mémoire du Shintô Sincère">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://kannagara.github.io/">
+
+<!-- ===== OPEN GRAPH (Facebook, LinkedIn, Discord…) ===== -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="随神 — Mémoire du Shintô Sincère">
+<meta property="og:description" content="Un mémoire sincère sur le shintô primitif : histoire, lexique complet, fondements philosophiques et pratique honnête pour ceux qui ressentent un lien avec la voie des kami.">
+<meta property="og:url" content="https://kannagara.github.io/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Kannagara — Mémoire du Shintô Sincère">
+
+<!-- ===== TWITTER CARD ===== -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="随神 — Mémoire du Shintô Sincère">
+<meta name="twitter:description" content="Histoire, lexique, fondements et pratique honnête du shintô primitif — pour ceux qui ressentent un lien avec la voie des kami, où qu'ils soient dans le monde.">
+
+<!-- ===== JSON-LD STRUCTURED DATA ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Mémoire du Shintô Sincère — Kannagara no Michi",
+  "description": "Un mémoire sincère sur le shintô primitif : son histoire, sa philosophie, un lexique complet et une pratique honnête pour ceux qui ressentent un lien avec la voie des kami.",
+  "inLanguage": "fr",
+  "keywords": "shintô, kami, kannagara, musubi, makoto, spiritualité japonaise, shintô primitif, pratique shinto",
+  "about": [
+    { "@type": "Thing", "name": "Shintô" },
+    { "@type": "Thing", "name": "Spiritualité japonaise" },
+    { "@type": "Thing", "name": "Kannagara" }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Noto+Serif+JP:wght@200;300;400;500&family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ========== VARIABLES ========== */
+:root {
+  --bg:        #0e0d0a;
+  --bg2:       #161410;
+  --bg3:       #1e1b16;
+  --surface:   #242018;
+  --border:    rgba(180,160,100,0.15);
+  --border2:   rgba(180,160,100,0.3);
+  --text:      #ddd5c0;
+  --text-soft: #9a9080;
+  --text-dim:  #6a6255;
+  --gold:      #c4a35a;
+  --gold-dim:  #8a7040;
+  --gold-glow: rgba(196,163,90,0.12);
+  --moss:      #5a7a52;
+  --red-dim:   #8a4a3a;
+  --cream:     #f0e8d8;
+}
+
+/* ========== RESET & BASE ========== */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.9;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Grain */
+body::after {
+  content:'';
+  position:fixed; inset:0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events:none; z-index:9999;
+}
+
+/* ========== HEADER ========== */
+header {
+  text-align: center;
+  padding: 80px 40px 60px;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  background: linear-gradient(180deg, rgba(196,163,90,0.04) 0%, transparent 100%);
+}
+
+.header-kamon {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 56px;
+  font-weight: 200;
+  color: var(--gold);
+  opacity: 0.7;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  margin-bottom: 20px;
+  animation: fadeDown 1s ease both;
+}
+
+header h1 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(22px, 4vw, 38px);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  color: var(--cream);
+  margin-bottom: 8px;
+  animation: fadeDown 1s ease 0.15s both;
+}
+
+.header-sub {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 13px;
+  letter-spacing: 0.4em;
+  color: var(--text-soft);
+  font-weight: 200;
+  animation: fadeDown 1s ease 0.25s both;
+}
+
+.header-desc {
+  max-width: 560px;
+  margin: 28px auto 0;
+  font-style: italic;
+  color: var(--text-soft);
+  font-size: 16px;
+  line-height: 1.75;
+  animation: fadeDown 1s ease 0.35s both;
+}
+
+.header-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(180deg, var(--gold-dim), transparent);
+  margin: 28px auto 0;
+  animation: fadeDown 1s ease 0.45s both;
+}
+
+@keyframes fadeDown {
+  from { opacity:0; transform:translateY(-14px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+/* ========== NAV ========== */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(14,13,10,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+nav::-webkit-scrollbar { display:none; }
+
+.nav-inner {
+  display: flex;
+  justify-content: center;
+  min-width: max-content;
+  margin: 0 auto;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  cursor: pointer;
+  padding: 16px 22px;
+  font-family: 'IM Fell English', serif;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  transition: color 0.25s, border-color 0.25s;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+nav button .nav-kanji {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1;
+}
+
+nav button:hover { color: var(--text); }
+
+nav button.active {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+/* ========== MAIN CONTENT ========== */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.tab-section {
+  display: none;
+  padding: 72px 0 120px;
+  animation: fadeIn 0.5s ease both;
+}
+.tab-section.active { display: block; }
+
+@keyframes fadeIn {
+  from { opacity:0; transform:translateY(8px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+/* ========== TYPOGRAPHY ========== */
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 400;
+  color: var(--cream);
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+h2 .jp {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 0.7em;
+  font-weight: 200;
+  color: var(--gold-dim);
+  margin-left: 12px;
+  vertical-align: middle;
+  letter-spacing: 0.2em;
+}
+
+.section-label {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 11px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.gold-rule {
+  width: 48px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+  margin: 16px 0 32px;
+}
+
+p { margin-bottom: 20px; color: var(--text); }
+p:last-child { margin-bottom: 0; }
+
+em { font-style: italic; color: var(--cream); }
+strong { font-weight: 700; color: var(--cream); }
+
+/* ========== BLOCK COMPONENTS ========== */
+.callout {
+  border: 1px solid var(--border2);
+  border-left: 3px solid var(--gold);
+  padding: 22px 28px;
+  margin: 32px 0;
+  background: var(--gold-glow);
+  font-style: italic;
+  color: var(--text-soft);
+  font-size: 17px;
+}
+
+.info-block {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  padding: 28px 32px;
+  margin: 28px 0;
+}
+
+.info-block h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.info-block ul, .info-block ol {
+  padding-left: 20px;
+  color: var(--text);
+}
+
+.info-block li {
+  margin-bottom: 10px;
+  font-size: 16.5px;
+  line-height: 1.8;
+}
+
+.content-section {
+  margin-bottom: 64px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid var(--border);
+}
+.content-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* ========== HISTORY TIMELINE ========== */
+.timeline {
+  position: relative;
+  padding-left: 32px;
+  margin: 32px 0;
+}
+.timeline::before {
+  content:'';
+  position:absolute;
+  left:0; top:8px; bottom:8px;
+  width:1px;
+  background: linear-gradient(180deg, var(--gold-dim), transparent);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+.timeline-item::before {
+  content:'';
+  position:absolute;
+  left:-38px; top:8px;
+  width:7px; height:7px;
+  border:1px solid var(--gold-dim);
+  background: var(--bg);
+  transform: rotate(45deg);
+}
+
+.timeline-period {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+
+.timeline-title {
+  font-size: 18px;
+  color: var(--cream);
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.timeline-body {
+  color: var(--text-soft);
+  font-size: 16px;
+  margin: 0;
+}
+
+/* ========== LEXIQUE ========== */
+.lexique-grid {
+  display: grid;
+  gap: 2px;
+  margin: 24px 0;
+}
+
+.lexique-item {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  padding: 22px 28px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.lexique-item:hover {
+  border-color: var(--border2);
+  background: var(--surface);
+}
+
+.lexique-item.open {
+  border-color: var(--gold-dim);
+}
+
+.lexique-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.lexique-kanji {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 28px;
+  font-weight: 200;
+  color: var(--gold);
+  line-height: 1;
+  min-width: 40px;
+}
+
+.lexique-romaji {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  letter-spacing: 0.12em;
+  color: var(--cream);
+}
+
+.lexique-fr {
+  font-size: 14px;
+  color: var(--text-soft);
+  font-style: italic;
+  margin-left: auto;
+}
+
+.lexique-body {
+  display: none;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.lexique-item.open .lexique-body { display: block; }
+
+/* ========== PRACTICE BLOCKS ========== */
+.practice-step {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 28px;
+  align-items: flex-start;
+}
+
+.step-num {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 20px;
+  font-weight: 200;
+  color: var(--gold-dim);
+  min-width: 32px;
+  line-height: 1.5;
+}
+
+.step-body {}
+.step-body strong { display: block; color: var(--cream); margin-bottom: 4px; }
+.step-body p { margin: 0; color: var(--text-soft); font-size: 16px; }
+
+/* Season cards */
+.seasons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.season-card {
+  border: 1px solid var(--border);
+  padding: 24px;
+  background: var(--bg3);
+  transition: border-color 0.2s;
+}
+.season-card:hover { border-color: var(--border2); }
+
+.season-jp {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 32px;
+  font-weight: 200;
+  color: var(--gold);
+  opacity: 0.7;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.season-label {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  color: var(--text-dim);
+  margin-bottom: 14px;
+}
+
+.season-card p { font-size: 15.5px; color: var(--text-soft); line-height: 1.75; }
+
+/* Principles row */
+.principles-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0;
+}
+
+.principle-tag {
+  border: 1px solid var(--border2);
+  padding: 7px 18px;
+  font-size: 14px;
+  color: var(--text-soft);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: border-color 0.2s, color 0.2s;
+}
+.principle-tag:hover { border-color: var(--gold-dim); color: var(--text); }
+.principle-tag .jp {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 17px;
+  font-weight: 200;
+  color: var(--gold-dim);
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 60px 40px;
+  border-top: 1px solid var(--border);
+  color: var(--text-dim);
+  font-size: 14px;
+  font-style: italic;
+}
+
+footer .footer-kanji {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 28px;
+  font-weight: 200;
+  color: var(--gold-dim);
+  margin-bottom: 14px;
+  opacity: 0.6;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 600px) {
+  header { padding: 60px 24px 48px; }
+  main { padding: 0 20px; }
+  .seasons-grid { grid-template-columns: 1fr; }
+  nav button { padding: 14px 14px; font-size: 12px; }
+  .lexique-fr { display: none; }
+  .info-block { padding: 22px 20px; }
+  .callout { padding: 18px 20px; font-size: 15.5px; }
+  .practice-step { gap: 14px; }
+  .step-num { font-size: 18px; min-width: 28px; }
+  .lexique-kanji { font-size: 22px; min-width: 32px; }
+  .lexique-item { padding: 18px 20px; }
+  .tab-section { padding: 48px 0 80px; }
+  body { font-size: 16px; }
+  p { font-size: 16px; }
+  h2 { letter-spacing: 0.06em; }
+  .timeline { padding-left: 24px; }
+  .timeline-item::before { left: -30px; }
+  .prev-next { flex-direction: column; gap: 12px; }
+  .prev-next a { width: 100%; }
+}
+
+@media (max-width: 400px) {
+  nav button { padding: 12px 10px; font-size: 11px; }
+  nav button .nav-kanji { font-size: 14px; }
+  .header-kamon { font-size: 44px; }
+  .principles-row { gap: 8px; }
+  .principle-tag { padding: 6px 12px; font-size: 13px; }
+}
+
+/* ========== BACK TO TOP ========== */
+.back-to-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 48px;
+  height: 48px;
+  background: var(--bg2);
+  border: 1px solid var(--gold-dim);
+  color: var(--gold);
+  font-family: 'Noto Serif JP', serif;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s, background 0.2s, border-color 0.2s;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+  line-height: 1;
+  padding-bottom: 3px;
+}
+
+.back-to-top:hover {
+  background: var(--bg3);
+  border-color: var(--gold);
+  color: var(--cream);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+}
+
+/* ========== PREV / NEXT NAVIGATION ========== */
+.prev-next {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 72px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.prev-next a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px 24px;
+  border: 1px solid var(--border);
+  background: var(--bg3);
+  color: var(--text-soft);
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+  cursor: pointer;
+  font-family: 'IM Fell English', serif;
+}
+
+.prev-next a:hover {
+  border-color: var(--gold-dim);
+  color: var(--cream);
+  background: var(--surface);
+}
+
+.prev-next a.prev { text-align: left; }
+.prev-next a.next { text-align: right; }
+.prev-next a.placeholder { visibility: hidden; pointer-events: none; }
+
+.pn-label {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+}
+
+.pn-title {
+  font-size: 17px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.prev-next a.prev .pn-title::before { content: '←'; color: var(--gold-dim); }
+.prev-next a.next .pn-title { justify-content: flex-end; }
+.prev-next a.next .pn-title::after { content: '→'; color: var(--gold-dim); }
+.prev-next a:hover .pn-title::before,
+.prev-next a:hover .pn-title::after { color: var(--gold); }
+
+.pn-kanji {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 200;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-kamon">随神</div>
+  <h1>Mémoire du Shintô Sincère</h1>
+  <div class="header-sub">Kannagara no Michi — La voie qui suit les kami</div>
+  <p class="header-desc">Ce document n'est pas un traité académique, ni une invitation à la conversion. C'est un reposoir — un espace pour ceux qui ressentent un lien profond avec le shintô et cherchent à comprendre ce qu'il est vraiment, au-delà des institutions et des idées reçues.</p>
+  <div class="header-line"></div>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-inner" role="tablist" aria-label="Sections du mémoire">
+    <button class="active" onclick="showTab('preface', this)" role="tab" aria-selected="true" aria-controls="tab-preface">
+      <span class="nav-kanji">縁</span>Préface
+    </button>
+    <button onclick="showTab('histoire', this)" role="tab" aria-selected="false" aria-controls="tab-histoire">
+      <span class="nav-kanji">歴</span>Histoire
+    </button>
+    <button onclick="showTab('lexique', this)" role="tab" aria-selected="false" aria-controls="tab-lexique">
+      <span class="nav-kanji">語</span>Lexique
+    </button>
+    <button onclick="showTab('fondements', this)" role="tab" aria-selected="false" aria-controls="tab-fondements">
+      <span class="nav-kanji">神</span>Fondements
+    </button>
+    <button onclick="showTab('pratique', this)" role="tab" aria-selected="false" aria-controls="tab-pratique">
+      <span class="nav-kanji">祈</span>Pratique
+    </button>
+    <button onclick="showTab('chemin', this)" role="tab" aria-selected="false" aria-controls="tab-chemin">
+      <span class="nav-kanji">心</span>Le Chemin
+    </button>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main>
+
+<!-- ============================
+     PRÉFACE
+     ============================ -->
+<section id="tab-preface" class="tab-section active">
+
+  <div class="content-section">
+    <div class="section-label">I — Ce document</div>
+    <h2>Pourquoi ce mémoire <span class="jp">序文</span></h2>
+    <div class="gold-rule"></div>
+    <p>Le shintô est l'une des traditions spirituelles les plus mal comprises en dehors du Japon — et parfois même au Japon. Des siècles de syncrétisme religieux, suivis d'une instrumentalisation politique brutale au XIXe siècle, ont recouvert ses fondements d'une épaisse couche de bureaucratie, de nationalisme et de dogme artificiel. Ce qui en émerge dans les livres occidentaux et sur internet est souvent un mélange confus entre mythologie folklorique, institution d'État, et esthétique touristique — trois couches qui masquent ce qui vivait en dessous bien avant elles.</p>
+    <p>Ce document tente de revenir à l'essentiel : ce que le shintô était avant qu'on l'organise, le codifie et l'utilise. Ce qu'il peut signifier aujourd'hui pour ceux qui, où qu'ils se trouvent dans le monde, ressentent une résonance profonde avec ses valeurs — le respect du vivant, la relation au sacré immanent, la sincérité comme vertu première, et la reconnaissance que le monde naturel n'est pas un décor mais un partenaire de vie.</p>
+    <p>Il ne s'agit pas de convertir, ni de donner des leçons. Il s'agit d'offrir un espace clair, honnête et accessible à ceux qui se posent les mêmes questions et n'ont nulle part où poser leurs doutes. Beaucoup de personnes sensibles à cette voie se sentent seules avec leurs intuitions — ce document leur dit simplement : vous n'êtes pas seuls, et ce que vous ressentez a une longue histoire.</p>
+
+    <div class="callout">
+      "Ce que le shintô nomme, beaucoup de gens le ressentent. Le problème n'est pas l'absence de sensibilité — c'est l'absence de mots."
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">II — À qui s'adresse ce mémoire</div>
+    <h2>Pour qui <span class="jp">誰のために</span></h2>
+    <div class="gold-rule"></div>
+    <p>Ce document s'adresse à ceux qui se reconnaissent dans l'une ou plusieurs de ces situations :</p>
+    <div class="info-block">
+      <ul>
+        <li>Vous vous sentez profondément attirés par le Japon, sa nature, son esthétique, ses valeurs — sans pouvoir tout à fait expliquer pourquoi</li>
+        <li>Vous ressentez quelque chose de sacré dans la forêt, la montagne, la mer, le silence de l'aube — et cherchez un cadre pour nommer cette expérience</li>
+        <li>Vous avez lu sur le shintô mais vous avez l'impression que ce que vous trouvez ne correspond pas tout à fait à ce que vous ressentez</li>
+        <li>Vous craignez d'être un "imposteur" si vous vous intéressez à cette tradition sans être japonais</li>
+        <li>Vous cherchez une pratique spirituelle honnête, sans dogme rigide, centrée sur le rapport au vivant et à la nature</li>
+        <li>Vous avez été élevé dans une autre tradition religieuse et cherchez à articuler ce que vous ressentez sans forcément tout abandonner de votre héritage</li>
+        <li>Vous voulez simplement comprendre — sans arrière-pensée, sans prosélytisme</li>
+      </ul>
+    </div>
+    <p>Si vous vous reconnaissez ici, ce mémoire est pour vous. Il ne vous demandera rien. Il n'attendra pas que vous vous engagiez. Il propose simplement un espace où penser, comprendre et ressentir.</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">III — Ce que ce document n'est pas</div>
+    <h2>Honnêteté sur les limites <span class="jp">限界</span></h2>
+    <div class="gold-rule"></div>
+    <p>Ce mémoire n'est pas une traduction officielle des textes shintô. Il n'a pas été écrit par un prêtre ou un universitaire spécialisé. Ce n'est pas non plus une déclaration que quiconque peut ou devrait "se dire shintô" sans aucune réflexion.</p>
+    <p>Il s'agit d'une synthèse sincère, nourrie par des lectures, une longue réflexion, et l'honnêteté de reconnaître que certaines pratiques restent liées à un territoire, à une communauté, à une histoire que nous ne partageons pas. Ces limites sont nommées clairement dans ce document, pas cachées.</p>
+    <p>Ce document ne prétend pas non plus être exhaustif. Le shintô est une tradition plurimillénaire ; aucun texte court ne peut épuiser sa richesse. Considérez ce mémoire comme une porte d'entrée respectueuse, non comme une carte complète. Les lectures recommandées à la fin vous permettront d'aller plus loin si le chemin vous appelle.</p>
+    <p>La sincérité exige que nous reconnaissions ce que nous ne pouvons pas être — pour mieux habiter ce que nous pouvons être.</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">IV — Comment lire ce mémoire</div>
+    <h2>L'approche <span class="jp">読み方</span></h2>
+    <div class="gold-rule"></div>
+    <p>Ce document est organisé en six parties qui peuvent se lire dans l'ordre ou selon votre curiosité du moment. Chacune a sa fonction :</p>
+    <div class="info-block">
+      <ul>
+        <li><strong>Histoire</strong> — pour comprendre d'où vient ce que l'on appelle shintô, et pourquoi certaines idées reçues méritent d'être déconstruites</li>
+        <li><strong>Lexique</strong> — un glossaire des termes essentiels, cliquables, consultable à tout moment</li>
+        <li><strong>Fondements</strong> — les concepts philosophiques et spirituels qui structurent la voie</li>
+        <li><strong>Pratique</strong> — comment cela peut se vivre concrètement, au quotidien, hors du Japon</li>
+        <li><strong>Le Chemin</strong> — les questions personnelles, les écueils, l'engagement</li>
+      </ul>
+    </div>
+    <p>Prenez votre temps. Il n'y a pas d'urgence. Une tradition qui a pris des millénaires à se former mérite qu'on lui consacre plus de quelques minutes de lecture distraite.</p>
+  </div>
+
+  <div class="prev-next">
+    <a class="placeholder"></a>
+    <a class="next" onclick="switchTab('histoire')">
+      <span class="pn-label">Suivant</span>
+      <span class="pn-title"><span class="pn-kanji">歴</span> Histoire</span>
+    </a>
+  </div>
+
+</section>
+
+<!-- ============================
+     HISTOIRE
+     ============================ -->
+<section id="tab-histoire" class="tab-section">
+
+  <div class="content-section">
+    <div class="section-label">Origines</div>
+    <h2>Avant le nom <span class="jp">神道以前</span></h2>
+    <div class="gold-rule"></div>
+    <p>Le shintô n'a pas de fondateur, pas de date de naissance, pas de prophète. C'est une des rares traditions spirituelles au monde qui soit véritablement <em>née de la relation</em> — la relation quotidienne d'un peuple avec son environnement naturel, ses ancêtres, et les forces qui semblaient animer le monde. Cette absence d'origine identifiable n'est pas un manque : c'est une caractéristique essentielle. Le shintô a toujours été ce que les humains faisaient pour vivre en accord avec leur environnement, bien avant que quiconque ait l'idée de le nommer.</p>
+    <p>Le mot <em>Shintô</em> lui-même (神道) est composé de <em>shin</em> (神 — kami, divinité, force sacrée) et <em>tô/dô</em> (道 — voie, chemin). Il n'a pas été utilisé avant l'arrivée du bouddhisme au VIe siècle — il fallait un mot pour distinguer les pratiques indigènes japonaises de cette nouvelle religion venue du continent. L'expression plus ancienne et plus authentique est probablement <em>kami no michi</em> (神の道), la "voie des kami", ou encore <em>kannagara no michi</em> (随神の道), "la voie qui suit les kami".</p>
+    <p>Avant ce nom existait simplement une façon d'être au monde — une sensibilité sans doctrine, une pratique sans nom, une relation sans contrat.</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">La chronologie</div>
+    <h2>De l'animisme à l'institution <span class="jp">歴史</span></h2>
+    <div class="gold-rule"></div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-period">14 000 av. J.-C. — 300 av. J.-C.</div>
+        <div class="timeline-title">Période Jômon — Les racines animistes</div>
+        <p class="timeline-body">La culture Jômon est l'une des plus anciennes cultures de l'humanité — son nom signifie "empreinte de corde", en référence aux décorations caractéristiques de ses poteries, parmi les plus anciennes au monde. Ces populations de chasseurs-cueilleurs, puis de proto-agriculteurs sédentaires, entretiennent un rapport profondément animiste avec leur environnement. Les forces naturelles — tempêtes, volcans, rivières, arbres immenses, ours, cerfs — sont perçues comme vivantes et habitées. Les figurines <em>dogū</em>, retrouvées par milliers, témoignent d'une sensibilité spirituelle complexe. Ce substrat animiste constitue le cœur de ce qui deviendra le shintô. Il n'existe pas encore de temples, pas de clergé, pas de textes : seulement une relation vécue, transmise de génération en génération par la parole, le geste et la présence.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-period">300 av. J.-C. — 300 ap. J.-C.</div>
+        <div class="timeline-title">Période Yayoi — L'agriculture et les ancêtres</div>
+        <p class="timeline-body">L'introduction de la riziculture en provenance du continent transforme profondément la société japonaise. Les rites liés aux semailles, aux récoltes, à la pluie et à la fertilité s'organisent et se complexifient. Le culte des ancêtres se développe — les morts veillent sur les vivants et méritent le respect ; les lignées familiales s'articulent autour de kami protecteurs (<em>ujigami</em>). Les premiers sanctuaires apparaissent, mais sous forme d'espaces naturels délimités — un bosquet sacré (<em>himorogi</em>), une pierre remarquable (<em>iwakura</em>), une montagne entière. Il n'y a pas encore de bâtiment : l'espace naturel est le sanctuaire. Cette conception originelle reste essentielle pour comprendre ce qu'est, au fond, un lieu sacré shintô.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-period">300 — 710 ap. J.-C.</div>
+        <div class="timeline-title">Périodes Kofun et Asuka — Mythologie impériale</div>
+        <p class="timeline-body">La famille impériale japonaise (Yamato) consolida son pouvoir en se rattachant à une généalogie divine, se proclamant descendants d'Amaterasu, kami du soleil. Les immenses tombes en forme de trou de serrure (<em>kofun</em>) qui donnent leur nom à cette période témoignent de l'importance du culte des ancêtres impériaux. Le shintô commence à servir aussi de fondation politique — un tournant décisif qui aura des conséquences très lointaines. L'arrivée officielle du bouddhisme depuis le royaume coréen de Paekche (traditionnellement datée de 538 ou 552) introduit pour la première fois une concurrence religieuse organisée — avec ses textes, ses temples, son clergé et sa philosophie élaborée. Cette rencontre force les pratiques indigènes à s'articuler comme une tradition distincte, et c'est de cette confrontation que naîtra progressivement le mot <em>shintô</em> lui-même.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-period">712 — 720 ap. J.-C.</div>
+        <div class="timeline-title">Kojiki et Nihon Shoki — La mythologie mise par écrit</div>
+        <p class="timeline-body">Le <em>Kojiki</em> (Récit des choses anciennes, 712), compilé par Ō no Yasumaro sur ordre impérial, et le <em>Nihon Shoki</em> (Chroniques du Japon, 720) sont les premiers textes à consigner la cosmogonie japonaise : la création du monde par Izanagi et Izanami, la naissance des kami, les aventures d'Amaterasu se cachant dans la grotte céleste, la descente du petit-fils d'Amaterasu sur terre, la généalogie des empereurs. Ces textes ne sont pas des "bibles" prescriptives — ils sont un recueil de mythes et de récits historico-légendaires, influencé par les modèles chinois d'historiographie dynastique, qui cherchent à donner sens à l'origine des choses et à fonder la légitimité impériale. Leur influence sur la compréhension ultérieure du shintô est considérable, mais il est important de rappeler qu'ils représentent une strate déjà politique de la tradition, pas ses racines populaires les plus anciennes.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-period">927 ap. J.-C.</div>
+        <div class="timeline-title">Engishiki — La codification rituelle</div>
+        <p class="timeline-body">Sous la période Heian, l'<em>Engishiki</em> (Procédures de l'ère Engi) compile en cinquante volumes les codes gouvernementaux, les prières rituelles officielles (<em>norito</em>), et un répertoire des sanctuaires officiellement reconnus par l'État — environ 2 861 sanctuaires y sont recensés. C'est le premier document à codifier systématiquement la pratique rituelle shintô. On y trouve encore aujourd'hui les plus anciens <em>norito</em> parvenus jusqu'à nous, dans une langue japonaise archaïque d'une grande beauté poétique. L'Engishiki marque le début d'un shintô d'abord aristocratique et codifié, parallèle au shintô populaire qui continue sa vie discrète dans les villages.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-period">VIe siècle — 1868</div>
+        <div class="timeline-title">Shinbutsu-shūgō — La fusion avec le bouddhisme</div>
+        <p class="timeline-body">Pendant plus d'un millénaire, le bouddhisme et le shintô coexistent et se mélangent en un syncrétisme appelé <em>shinbutsu-shūgō</em> (amalgame des kami et des bouddhas). Une doctrine majeure, le <em>honji suijaku</em> (本地垂迹), proposait même que les kami japonais soient des manifestations locales (<em>suijaku</em>) de bouddhas universels (<em>honji</em>). Des temples bouddhistes sont construits près des sanctuaires shintô ; des moines résident dans les sanctuaires, des prêtres shintô officient dans les temples ; les mêmes personnes pratiquent couramment les deux traditions sans y voir de contradiction. Cette fusion est la norme, pas l'exception. Elle prend fin brutalement en 1868 avec la politique de séparation forcée (<em>shinbutsu bunri</em>) imposée par le gouvernement Meiji, qui s'accompagne de destructions massives d'œuvres bouddhistes dans les sanctuaires (<em>haibutsu kishaku</em>). Cette rupture violente, encore peu connue en Occident, a profondément déformé la perception moderne du shintô en effaçant brutalement plus de mille ans d'histoire syncrétique.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-period">XVe siècle</div>
+        <div class="timeline-title">Yoshida Shintô — La première systématisation</div>
+        <p class="timeline-body">Yoshida Kanetomo (1435-1511), prêtre du sanctuaire Yoshida à Kyôto, développe une des premières tentatives de systématisation doctrinale du shintô, appelée <em>Yoshida Shintô</em> ou <em>Yuiitsu Shintô</em> (shintô unique). Inversant la logique du <em>honji suijaku</em>, il affirme que les kami sont l'origine et les bouddhas les manifestations — une première affirmation d'autonomie théologique du shintô. L'école Yoshida influencera considérablement la pensée shintô jusqu'à l'époque moderne, et préfigure les courants nativistes du XVIIIe siècle.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-period">XVIIIe siècle</div>
+        <div class="timeline-title">Kokugaku — Le mouvement nativiste</div>
+        <p class="timeline-body">Des intellectuels de l'ère Edo — Kada no Azumamaro, Kamo no Mabuchi, et surtout <em>Motoori Norinaga</em> (1730-1801) — développent le <em>kokugaku</em> (études nationales). Ce mouvement cherche à "purifier" le shintô de ses influences bouddhistes, confucéennes et chinoises pour retrouver une essence japonaise originelle, en revenant directement aux textes les plus anciens (particulièrement le <em>Kojiki</em> auquel Norinaga consacre 35 ans de commentaires érudits). Norinaga développe notamment le concept central de <em>mono no aware</em> — la sensibilité à la grâce éphémère des choses. Cette démarche contient une sincérité académique réelle et produit des analyses philologiques remarquables, mais elle contient aussi les germes d'une idéologie nativiste qui sera exploitée politiquement au siècle suivant.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-period">1868 — 1945</div>
+        <div class="timeline-title">Kokka Shintô — Le shintô d'État</div>
+        <p class="timeline-body">C'est ici que tout se complique. La Restauration Meiji (1868) place l'Empereur au centre d'un État moderne qui cherche à se doter d'une identité nationale forte face à la menace coloniale occidentale. Le gouvernement sépare de force le bouddhisme du shintô (<em>shinbutsu bunri</em>), confisque le statut religieux du shintô en le déclarant "non-religieux" (pour échapper aux critiques de liberté religieuse), crée une hiérarchie nationale de sanctuaires stratifiés, institue un clergé salarié par l'État, standardise les rituels et les architectures, et fait du shintô la fondation idéologique de la nation japonaise. Parallèlement, les sectes populaires qui ne pouvaient entrer dans ce moule sont regroupées à part sous le nom de <em>Kyōha Shintō</em> ("shintô des sectes"), comptant treize écoles reconnues. Ce <em>Kokka Shintô</em> (shintô d'État) culmine pendant la Seconde Guerre mondiale, où il est utilisé pour justifier l'expansionnisme militaire et le culte des soldats morts comme kami au sanctuaire Yasukuni. C'est cette version institutionnelle, politique, construite, que beaucoup de gens connaissent aujourd'hui — et elle n'est ni représentative du shintô originel, ni du shintô contemporain.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-period">1945 — aujourd'hui</div>
+        <div class="timeline-title">Après la guerre — Retour à la séparation</div>
+        <p class="timeline-body">Le 15 décembre 1945, la "Directive Shintô" (<em>Shintō Shirei</em>) des forces alliées d'occupation démantèle le shintô d'État : les sanctuaires perdent leur financement public, la hiérarchie nationale est abolie, le shintô est officiellement séparé de l'État. Le 1er janvier 1946, l'Empereur Hirohito renonce publiquement à sa divinité déclarée dans la "Déclaration d'humanité" (<em>Ningen-sengen</em>). La constitution de 1947 garantit la séparation religion-État. Le shintô redevient une affaire privée et communautaire. Aujourd'hui, environ 80 000 sanctuaires subsistent au Japon, majoritairement gérés par l'<em>Association des sanctuaires shintô</em> (Jinja Honchō, fondée en 1946). Ils coexistent avec un shintô populaire diffus, non institutionnel, qui s'exprime dans les fêtes de quartier (<em>matsuri</em>), les visites de sanctuaires pour les grandes occasions de la vie (naissance, mariage, nouvel an), et une relation quotidienne, souvent tacite, avec le vivant. Beaucoup de Japonais ne se déclarent pas "shintô" au sens religieux — mais pratiquent sans y penser, en allant au sanctuaire pour souhaiter la bonne année ou demander la santé d'un enfant.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Synthèse</div>
+    <h2>Ce que l'histoire nous enseigne <span class="jp">教訓</span></h2>
+    <div class="gold-rule"></div>
+    <p>L'histoire du shintô est celle d'une tradition en perpétuelle adaptation — absorbant le bouddhisme, résistant au confucianisme, survivant à son instrumentalisation politique, puis retrouvant sa forme plurielle après-guerre. Ce qui perdure à travers tous ces changements, c'est un substrat irréductible : <em>la relation au vivant, la présence du sacré dans la nature, et la sincérité comme condition de cette relation.</em></p>
+    <p>Le shintô institutionnel tel qu'on le connaît aujourd'hui — avec ses codes, ses prêtres en robes blanches, ses rituels standardisés — est largement une construction du XIXe siècle. Le shintô comme sensibilité et comme rapport au monde est immémorial — et n'appartient à aucune institution.</p>
+    <p>Pour qui cherche à comprendre sincèrement le shintô, ce distinguo est fondamental. On ne rejette pas le shintô institutionnel — il a sa beauté, son utilité, ses pratiques précieuses. Mais on ne le confond pas avec le shintô dans sa totalité. L'un est une maison ; l'autre est le vent qui passe dedans.</p>
+
+    <div class="callout">
+      Ce qui a survécu à mille ans de bouddhisme, à des siècles de confucianisme, à l'instrumentalisation nationaliste et à la défaite de 1945 — c'est le noyau que nous cherchons ici à nommer.
+    </div>
+  </div>
+
+  <div class="prev-next">
+    <a class="prev" onclick="switchTab('preface')">
+      <span class="pn-label">Précédent</span>
+      <span class="pn-title"><span class="pn-kanji">縁</span> Préface</span>
+    </a>
+    <a class="next" onclick="switchTab('lexique')">
+      <span class="pn-label">Suivant</span>
+      <span class="pn-title"><span class="pn-kanji">語</span> Lexique</span>
+    </a>
+  </div>
+
+</section>
+
+<!-- ============================
+     LEXIQUE
+     ============================ -->
+<section id="tab-lexique" class="tab-section">
+
+  <div class="section-label">Glossaire</div>
+  <h2>Les mots essentiels <span class="jp">言葉</span></h2>
+  <div class="gold-rule"></div>
+  <p style="color:var(--text-soft); font-style:italic; margin-bottom:32px;">Cliquez sur un terme pour afficher sa définition complète.</p>
+
+  <div class="lexique-grid">
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">神</span>
+        <span class="lexique-romaji">Kami</span>
+        <span class="lexique-fr">Esprit / Force sacrée</span>
+      </div>
+      <div class="lexique-body">
+        Le terme central du shintô, souvent traduit par "dieu" ou "divinité" — mais cette traduction est trompeuse. Un kami n'est pas un être séparé du monde, transcendant, omniscient au sens occidental. Un kami est une <em>qualité de présence sacrée</em> qui habite des lieux, des êtres ou des phénomènes naturels. Le mot vient possiblement de <em>kamu</em> (supérieur, mystérieux) ou de <em>kami</em> (en haut). Il existe des millions de kami — certains sont cosmiques (Amaterasu, kami du soleil), d'autres sont très locaux (kami d'une source, d'une colline précise). Un humain peut devenir kami après la mort si sa vie a été exceptionnelle. La présence du kami dans une chose la rend digne de respect — pas d'adoration au sens monothéiste, mais de <em>reconnaissance</em>.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">随神</span>
+        <span class="lexique-romaji">Kannagara</span>
+        <span class="lexique-fr">La voie des kami / Vivre en accord</span>
+      </div>
+      <div class="lexique-body">
+        Composé de <em>kami</em> et de <em>nagara</em> (tel que, en accord avec). Kannagara désigne une façon d'être et de vivre qui s'écoule naturellement en harmonie avec la voie des kami — c'est-à-dire avec le flux naturel de l'existence. Ce n'est pas une règle à suivre, c'est un état à habiter. Agir selon kannagara, c'est agir avec sincérité, sans résistance artificielle contre ce qui est naturel et juste. C'est la formulation la plus ancienne et la plus pure de ce qu'est le shintô — bien avant qu'il ait un nom.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">結び</span>
+        <span class="lexique-romaji">Musubi</span>
+        <span class="lexique-fr">Connexion / Force vitale / Croissance</span>
+      </div>
+      <div class="lexique-body">
+        L'un des concepts les plus profonds du shintô. Musubi désigne la force créatrice et connective qui anime toute vie — la puissance qui permet aux choses de croître, de se relier, de se perpétuer. C'est une force cosmique, mais elle est aussi présente dans chaque relation authentique : entre un humain et la nature, entre deux personnes, entre un geste et l'intention qui l'anime. Certains kami sont appelés <em>musubi no kami</em> — kami de la création et de l'harmonie. Ressentir le musubi, c'est ressentir cette force de connexion dans sa propre vie.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">誠</span>
+        <span class="lexique-romaji">Makoto</span>
+        <span class="lexique-fr">Sincérité / Vérité intérieure</span>
+      </div>
+      <div class="lexique-body">
+        La vertu fondamentale du shintô. Makoto est souvent traduit par "sincérité" mais le mot français ne rend pas tout : il s'agit d'une sincérité <em>totale</em>, sans calcul, sans performance, sans masque. Agir avec makoto, c'est agir en pleine cohérence entre l'intérieur et l'extérieur — ce qu'on pense, ce qu'on ressent, ce qu'on dit et ce qu'on fait convergent en un seul geste. Le shintô ne demande pas la perfection morale ; il demande la vérité. Un geste imparfait accompli avec makoto est infiniment supérieur à un rituel impeccable accompli par habitude ou par peur.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">穢れ</span>
+        <span class="lexique-romaji">Kegare</span>
+        <span class="lexique-fr">Impureté / Souillure spirituelle</span>
+      </div>
+      <div class="lexique-body">
+        Souvent mal traduit par "péché" ou "faute" — kegare n'a pas de connotation morale au sens judéo-chrétien. Une étymologie populaire décompose le mot en <em>ke</em> (énergie vitale) et <em>gare</em> (épuisé, diminué), bien que les spécialistes débattent de cette origine exacte. Ce qui est certain, c'est que le kegare désigne un <em>alourdissement</em> de l'énergie vitale, causé par le contact avec la mort, la maladie, le sang, le conflit, ou des émotions trop longtemps non libérées. Ce n'est pas une punition, c'est un état naturel qui appelle purification. Comme la poussière s'accumule, le kegare s'accumule — et comme on nettoie sa maison, on se purifie par le harae.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">祓</span>
+        <span class="lexique-romaji">Harae / Harai</span>
+        <span class="lexique-fr">Purification / Libération</span>
+      </div>
+      <div class="lexique-body">
+        Le rituel de purification qui dissout le kegare. Harae vient du verbe <em>harau</em> — balayer, chasser. Dans les cérémonies officielles, un prêtre agite un bâton de papier blanc (<em>haraigushi</em>) au-dessus des fidèles. Mais le harae dans sa forme la plus fondamentale est un geste intérieur : reconnaître ce qui alourdit, et choisir de le relâcher. L'eau, le sel, le feu et le vent sont les quatre éléments purificateurs du shintô.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">禊</span>
+        <span class="lexique-romaji">Misogi</span>
+        <span class="lexique-fr">Purification par l'eau</span>
+      </div>
+      <div class="lexique-body">
+        La forme la plus ancienne de purification shintô. Le misogi originel était une immersion totale dans une eau courante naturelle — rivière, cascade, mer. Il trouve son origine mythologique dans le bain d'Izanagi après son retour des enfers. Aujourd'hui, le misogi peut prendre des formes adaptées : se laver les mains et le visage à l'eau froide en portant l'intention de purification, une douche froide pratiquée avec conscience, ou simplement poser les mains dans une eau naturelle. Ce n'est pas l'eau seule qui purifie — c'est l'eau <em>et</em> l'intention.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">晴</span>
+        <span class="lexique-romaji">Hare</span>
+        <span class="lexique-fr">Clarté / État lumineux</span>
+      </div>
+      <div class="lexique-body">
+        L'état opposé au kegare — un état de clarté, d'ouverture, de légèreté. Le mot est le même que celui qui désigne le beau temps ("Hare" = clair, ensoleillé). Le cycle du shintô est un cycle entre hare et ke : le quotidien ordinaire (<em>ke</em>) s'alourdit progressivement et demande le retour au hare par la purification. Les grands matsuri (fêtes) sont des moments de hare collectif. Une bonne pratique quotidienne cherche à maintenir un état de hare accessible — non par effort forcé, mais par attention régulière.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">祝詞</span>
+        <span class="lexique-romaji">Norito</span>
+        <span class="lexique-fr">Prière / Paroles rituelles</span>
+      </div>
+      <div class="lexique-body">
+        Les norito sont des formules rituelles adressées aux kami lors des cérémonies officielles, récitées par les prêtres en japonais ancien (<em>Yamato kotoba</em>). Le corpus le plus important nous est parvenu grâce à l'<em>Engishiki</em> — un recueil de codes et rituels d'État compilé en 927 (période Heian). Dans le shintô institutionnel, seul le clergé récite des norito. Mais dans sa forme la plus ancienne, la prière adressée aux kami n'avait pas de forme fixe obligatoire. Ce qui comptait était la qualité de l'adresse — la sincérité, l'attention, la clarté de l'intention. Aujourd'hui, une prière personnelle dans n'importe quelle langue, dite avec makoto, honore l'esprit du norito.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">神体</span>
+        <span class="lexique-romaji">Shintai</span>
+        <span class="lexique-fr">Corps du kami / Objet sacré</span>
+      </div>
+      <div class="lexique-body">
+        Littéralement "corps du kami" — l'objet ou le lieu dans lequel est censé résider le kami. Dans un sanctuaire officiel, c'est généralement un objet caché dans le <em>honden</em> (salle principale) que personne ne peut voir. Mais originellement, le shintai était la montagne elle-même, la forêt, la source — le lieu naturel qui était reconnu comme habité. La distinction entre le shintai "objet" et le shintai "lieu naturel" illustre bien le passage d'un shintô vivant à un shintô institutionnel.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">神棚</span>
+        <span class="lexique-romaji">Kamidana</span>
+        <span class="lexique-fr">Étagère des kami / Sanctuaire domestique</span>
+      </div>
+      <div class="lexique-body">
+        L'espace sacré au sein du foyer. Dans la forme traditionnelle, il s'agit d'une étagère en bois placée en hauteur, sur laquelle reposent une tablette (<em>ofuda</em>) d'un sanctuaire officiel, une offrande d'eau, de riz, de sel et parfois de saké. On s'y recueille chaque matin. Dans une pratique sincère et adaptée, le kamidana peut être composé d'objets naturels chargés de sens personnel — une pierre, du bois, de l'eau renouvelée quotidiennement. L'intention prime sur la forme officielle.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">注連縄</span>
+        <span class="lexique-romaji">Shimenawa</span>
+        <span class="lexique-fr">Corde tressée / Délimitation du sacré</span>
+      </div>
+      <div class="lexique-body">
+        La corde de paille tressée que l'on voit autour des arbres, des rochers, des portails de sanctuaires. Elle marque la frontière entre l'espace ordinaire et l'espace sacré — entre ke et hare. Elle dit : <em>ce qui est ici est habité, mérite le respect, n'est pas à posséder</em>. Quand on voit un arbre centenaire entouré d'une shimenawa, c'est la reconnaissance visible que cet être vivant a une présence qui dépasse le commun. Voir une shimenawa autour d'un arbre vous apprend à regarder tous les arbres différemment.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">鳥居</span>
+        <span class="lexique-romaji">Torii</span>
+        <span class="lexique-fr">Portail du sanctuaire</span>
+      </div>
+      <div class="lexique-body">
+        Le portail emblématique du shintô, formé de deux montants et de deux traverses horizontales. Il marque l'entrée dans l'espace sacré d'un sanctuaire. Passer sous un torii est un geste symbolique de transition — on quitte l'espace profane pour entrer dans un espace de présence. On s'incline brièvement avant de passer. Le torii est probablement d'origine continentale (des structures similaires existent dans d'autres traditions asiatiques), mais il est devenu l'un des symboles visuels les plus forts du Japon.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">祭</span>
+        <span class="lexique-romaji">Matsuri</span>
+        <span class="lexique-fr">Fête / Célébration</span>
+      </div>
+      <div class="lexique-body">
+        Le matsuri est bien plus qu'une fête au sens occidental. C'est un moment de <em>rencontre</em> entre la communauté humaine et les kami — un espace-temps particulier où le hare collectif est cultivé, où les kami sont invités à descendre parmi les vivants. Les matsuri rythment l'année japonaise en lien avec les saisons, les récoltes, les événements locaux. Ils comprennent des processions, des offrandes, de la musique, des danses (<em>kagura</em>). Beaucoup sont liés à des sanctuaires et territoires spécifiques — ce qui explique leur intraduisibilité géographique. Mais leur esprit — célébrer les transitions, honorer le vivant, réaffirmer la communauté — est universel.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">物の哀れ</span>
+        <span class="lexique-romaji">Mono no aware</span>
+        <span class="lexique-fr">Sensibilité à l'impermanence des choses</span>
+      </div>
+      <div class="lexique-body">
+        Concept esthétique japonais (plus bouddhiste que shintô dans son origine, mais profondément intégré à la sensibilité japonaise). Littéralement "la pathos des choses" — une émotion douce-amère devant la beauté des choses passagères. Les cerisiers qui fleurissent et tombent en quelques jours. La lumière du soir sur l'eau. Un vieux temple envahi par la mousse. Cette sensibilité n'est pas mélancolie pure — c'est la reconnaissance que la beauté et la finitude sont inséparables, et que cette inséparabilité est elle-même une forme de grâce.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">間</span>
+        <span class="lexique-romaji">Ma</span>
+        <span class="lexique-fr">Espace / Pause / L'entre-deux</span>
+      </div>
+      <div class="lexique-body">
+        Un concept fondamental de l'esthétique et de la pensée japonaises. <em>Ma</em> désigne l'espace entre les choses — le silence entre les notes, le vide entre les colonnes d'un temple, la pause dans une conversation, l'intervalle entre deux saisons. Ce vide n'est pas une absence : il est plein de présence potentielle. Le ma est l'espace où quelque chose peut exister. Honorer le ma, c'est ne pas remplir chaque silence, ne pas occuper chaque espace — c'est laisser de la place au non-dit, à l'invisible, à ce qui n'a pas besoin d'être nommé pour être là.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">国家神道</span>
+        <span class="lexique-romaji">Kokka Shintô</span>
+        <span class="lexique-fr">Shintô d'État (1868–1945)</span>
+      </div>
+      <div class="lexique-body">
+        La version institutionnelle et politique du shintô imposée par le gouvernement Meiji à partir de 1868. Le Kokka Shintô a créé une hiérarchie nationale de sanctuaires, contrôlé le clergé, standardisé les rituels, déclaré l'Empereur divin, et fait du shintô le pilier idéologique du nationalisme japonais. Cette construction est étrangère au shintô primitif sur presque tous les points : le shintô originel était décentralisé, non exclusif, non dogmatique, et profondément local. Comprendre le Kokka Shintô est essentiel pour ne pas confondre le shintô institutionnel avec le shintô comme voie de vie.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">感謝</span>
+        <span class="lexique-romaji">Kansha</span>
+        <span class="lexique-fr">Gratitude profonde</span>
+      </div>
+      <div class="lexique-body">
+        La gratitude dans le shintô n'est pas une politesse sociale — c'est une reconnaissance ontologique. Nous existons grâce à une chaîne infinie de dons : la vie que d'autres êtres ont donnée pour nous nourrir, l'eau et l'air que la nature produit, l'énergie des kami qui anime le monde. Dire <em>itadakimasu</em> avant de manger (littéralement "je reçois humblement") est un geste de kansha. S'arrêter devant un coucher de soleil et ressentir quelque chose — c'est du kansha. C'est l'une des pratiques les plus accessibles et les plus transformatrices de la voie.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">八百万</span>
+        <span class="lexique-romaji">Yaoyorozu no kami</span>
+        <span class="lexique-fr">Les huit millions de kami</span>
+      </div>
+      <div class="lexique-body">
+        Littéralement "huit millions de kami" — expression idiomatique japonaise qui signifie en réalité "une multitude innombrable". Cette formule exprime la conception fondamentalement pluraliste du shintô : il n'y a pas un dieu, ni quelques dieux, mais d'innombrables présences sacrées dispersées dans tout le vivant. Chaque montagne peut avoir son kami, chaque source le sien, chaque arbre remarquable, chaque événement exceptionnel. Cette prolifération n'est pas un désordre — c'est une reconnaissance de la richesse infinie du monde. Contrairement au monothéisme, qui concentre le sacré dans une unique figure, le shintô le <em>disperse</em> partout, et c'est cette dispersion qui le rend quotidien et accessible.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">氏神</span>
+        <span class="lexique-romaji">Ujigami</span>
+        <span class="lexique-fr">Kami tutélaire d'un clan ou d'un lieu</span>
+      </div>
+      <div class="lexique-body">
+        Le kami protecteur d'une lignée familiale (<em>uji</em>), puis par extension d'une communauté ou d'un territoire. L'ujigami veille sur les naissances, les mariages, les transitions importantes des habitants de son domaine. Dans la société ancienne, chaque village avait son ujigami, lié à un sanctuaire local précis, et les habitants en étaient les <em>ujiko</em> (enfants de l'ujigami). Cette notion illustre combien le shintô originel était profondément territorial — le kami n'est pas abstrait, il habite un lieu précis et veille sur ceux qui habitent ce lieu. Même hors du Japon, on peut reconnaître cette qualité : des lieux ont des présences, et l'on peut apprendre à vivre avec elles en bons voisins.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">磐座</span>
+        <span class="lexique-romaji">Iwakura</span>
+        <span class="lexique-fr">Rocher sacré où réside un kami</span>
+      </div>
+      <div class="lexique-body">
+        Une pierre ou un rocher exceptionnel reconnu comme demeure d'un kami. Les iwakura sont parmi les formes les plus anciennes de lieux sacrés shintô, antérieures aux sanctuaires construits. On les reconnaît à leur présence singulière — taille, forme, emplacement, patine — et souvent à la shimenawa qui les entoure. Comprendre l'iwakura, c'est comprendre que le sacré shintô ne descend pas d'en haut, mais surgit d'en bas : ce sont les êtres du monde naturel eux-mêmes qui portent la présence sacrée, pas un récit abstrait. N'importe quelle pierre remarquable, partout dans le monde, peut être regardée avec cet œil-là.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">神籬</span>
+        <span class="lexique-romaji">Himorogi</span>
+        <span class="lexique-fr">Espace sacré végétal</span>
+      </div>
+      <div class="lexique-body">
+        Avant les bâtiments, les sanctuaires étaient des <em>himorogi</em> — espaces délimités autour d'un arbre sacré ou d'un bosquet, marqués par des cordes, des branches ou des pierres. Le mot combine <em>hi</em> (esprit, énergie sacrée) et <em>moro</em> (entourer). Encore aujourd'hui, lors de certains rituels en plein air, les prêtres shintô délimitent un himorogi temporaire en plantant une branche de sakaki (arbre sacré) au centre d'un carré de cordes. Cette pratique rappelle que <em>n'importe quel espace peut devenir sacré</em> dès qu'il est honoré comme tel — le lieu n'a pas besoin d'être bâti, il a besoin d'être reconnu.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">神楽</span>
+        <span class="lexique-romaji">Kagura</span>
+        <span class="lexique-fr">Danse sacrée offerte aux kami</span>
+      </div>
+      <div class="lexique-body">
+        Littéralement "musique/divertissement des kami". Le kagura est une danse rituelle accompagnée de musique traditionnelle, exécutée lors des matsuri ou dans le cadre des cérémonies du sanctuaire. Son origine mythologique se trouve dans le récit d'Amaterasu retirée dans la grotte céleste : pour l'en faire sortir, la kami Ame-no-Uzume exécute une danse joyeuse qui rétablit la lumière dans le monde. Le kagura est donc un geste cosmique de réjouissance et de rétablissement de l'harmonie, pas un simple spectacle. Chaque région du Japon a ses propres formes de kagura — démonstration que la pratique shintô est profondément locale et adaptative.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">お札</span>
+        <span class="lexique-romaji">Ofuda</span>
+        <span class="lexique-fr">Talisman sacré d'un sanctuaire</span>
+      </div>
+      <div class="lexique-body">
+        Une tablette (papier, bois ou métal) portant l'inscription d'un kami, obtenue dans un sanctuaire et placée dans le kamidana domestique. L'ofuda n'est pas un objet magique — c'est considéré comme une "extension" ou une "présence déléguée" du kami dans le foyer. L'ofuda le plus important pour beaucoup de foyers japonais est celui d'Ise (grand sanctuaire d'Amaterasu), renouvelé chaque année. Pour une pratique hors du Japon, cette notion est précieuse à comprendre mais pas à imiter mécaniquement : l'équivalent sincère peut être un objet naturel chargé de sens personnel, qui tient ce rôle de présence sacrée stable dans le foyer.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">御守</span>
+        <span class="lexique-romaji">Omamori</span>
+        <span class="lexique-fr">Amulette protectrice</span>
+      </div>
+      <div class="lexique-body">
+        Petites pochettes de tissu brodé contenant un papier béni, vendues dans les sanctuaires pour offrir une protection spécifique : santé, réussite aux examens, voyages, amour, naissance, conduite automobile. On les porte sur soi ou on les accroche à un sac. L'omamori est traditionnellement renouvelé chaque année (l'ancien étant rapporté au sanctuaire pour être brûlé respectueusement). C'est probablement la forme la plus populaire et la plus quotidienne du shintô contemporain — témoignage d'une tradition qui, même institutionnelle, conserve un caractère profondément concret et relié aux besoins réels de l'existence.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">絵馬</span>
+        <span class="lexique-romaji">Ema</span>
+        <span class="lexique-fr">Plaquette votive en bois</span>
+      </div>
+      <div class="lexique-body">
+        Littéralement "cheval peint" — car à l'origine on offrait de vrais chevaux aux sanctuaires, puis des représentations peintes, et enfin de petites plaquettes en bois. Aujourd'hui, on y écrit un vœu, une demande ou une gratitude, et on les accroche dans un espace prévu au sanctuaire. L'ema matérialise l'idée que la parole adressée aux kami gagne à être <em>inscrite</em>, rendue visible, offerte physiquement. Dans une pratique personnelle, tenir un petit carnet dédié aux intentions spirituelles, aux gratitudes ou aux vœux peut jouer un rôle similaire.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">言霊</span>
+        <span class="lexique-romaji">Kotodama</span>
+        <span class="lexique-fr">Esprit / pouvoir des mots</span>
+      </div>
+      <div class="lexique-body">
+        "Esprit du mot" — la croyance que les paroles prononcées portent en elles-mêmes une puissance sacrée, qu'elles façonnent la réalité. Les norito shintô sont composés en tenant compte du kotodama : leur sonorité, leur rythme, leur choix de mots anciens ne sont pas décoratifs, ils sont supposés <em>agir</em>. Cette intuition trouve des résonances universelles : dans la plupart des traditions, la parole rituelle est considérée comme créatrice. Pour une pratique personnelle, cela invite à prêter attention à la qualité de ce que l'on dit — non par superstition, mais parce que les mots que nous prononçons à voix haute s'inscrivent en nous et autour de nous.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">里山</span>
+        <span class="lexique-romaji">Satoyama</span>
+        <span class="lexique-fr">Relation village-montagne</span>
+      </div>
+      <div class="lexique-body">
+        Concept désignant la zone d'interface entre les villages humains (<em>sato</em>) et la montagne sauvage (<em>yama</em>). Historiquement, le satoyama était cultivé, pâturé, entretenu — mais jamais complètement domestiqué. Cette zone intermédiaire, lieu de <em>coexistence</em> respectueuse entre humains et nature sauvage, est profondément liée à la sensibilité shintô. Le satoyama illustre un principe essentiel : la vie juste ne consiste ni à dominer la nature, ni à s'en exclure, mais à vivre dans une zone de négociation consciente avec elle. C'est une notion précieuse partout dans le monde pour repenser notre rapport aux écosystèmes.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">榊</span>
+        <span class="lexique-romaji">Sakaki</span>
+        <span class="lexique-fr">Arbre sacré du shintô</span>
+      </div>
+      <div class="lexique-body">
+        Un arbre à feuilles persistantes (<em>Cleyera japonica</em>) considéré comme l'arbre sacré du shintô. Ses branches sont utilisées dans de nombreux rituels — pour délimiter les espaces sacrés, comme offrande aux kami, ou pour le <em>tamagushi</em> (branche rituelle ornée de bandelettes de papier). Le nom <em>sakaki</em> est lié au verbe <em>sakaeru</em> (prospérer, fleurir) ou à <em>sakai</em> (frontière, limite) — illustration du double rôle de l'arbre : porteur de vie et marqueur de seuil sacré. Hors du Japon, aucun arbre ne peut être strictement substitué — mais chaque culture a ses arbres qui jouent un rôle similaire, et les reconnaître comme tels est déjà une forme de continuité.
+      </div>
+    </div>
+
+    <div class="lexique-item" onclick="toggleLex(this)">
+      <div class="lexique-header">
+        <span class="lexique-kanji">本地垂迹</span>
+        <span class="lexique-romaji">Honji suijaku</span>
+        <span class="lexique-fr">Théorie syncrétique kami-bouddhas</span>
+      </div>
+      <div class="lexique-body">
+        Doctrine philosophique majeure du Japon médiéval, qui a structuré pendant près de mille ans le rapport entre shintô et bouddhisme. Elle considère les kami comme des <em>manifestations locales</em> (suijaku, "traces descendues") de bouddhas et bodhisattvas universels (honji, "origine foncière"). Amaterasu, par exemple, était identifiée au bouddha cosmique Dainichi. Ce syncrétisme subtil a permis la coexistence pacifique des deux traditions. Le connaître est important pour ne pas croire que le shintô a toujours été "pur" ou opposé au bouddhisme — cette opposition est une construction moderne de l'ère Meiji, pas une donnée historique.
+      </div>
+    </div>
+
+  </div>
+
+  <div class="prev-next">
+    <a class="prev" onclick="switchTab('histoire')">
+      <span class="pn-label">Précédent</span>
+      <span class="pn-title"><span class="pn-kanji">歴</span> Histoire</span>
+    </a>
+    <a class="next" onclick="switchTab('fondements')">
+      <span class="pn-label">Suivant</span>
+      <span class="pn-title"><span class="pn-kanji">神</span> Fondements</span>
+    </a>
+  </div>
+
+</section>
+
+<!-- ============================
+     FONDEMENTS
+     ============================ -->
+<section id="tab-fondements" class="tab-section">
+
+  <div class="content-section">
+    <div class="section-label">La nature du sacré</div>
+    <h2>Ce qu'est un kami — vraiment <span class="jp">神の本質</span></h2>
+    <div class="gold-rule"></div>
+    <p>La première chose à comprendre — et la plus importante — est que les kami ne sont <em>pas</em> des dieux au sens occidental. Ils ne créent pas le monde ex nihilo. Ils ne légifèrent pas sur la conduite humaine. Ils ne promettent ni paradis ni châtiment. Ils ne demandent pas la foi. Ils ne sont pas, à proprement parler, des "êtres" séparés de nous et du monde : ils sont des <em>qualités de présence</em> qui se manifestent dans certaines parts du monde plus intensément que dans d'autres.</p>
+    <p>Les kami habitent les lieux, les phénomènes, les êtres — là où quelque chose possède une force, une profondeur, une beauté ou une étrangeté qui dépasse l'ordinaire. Le philosophe Motoori Norinaga les définissait comme "tout ce qui est extraordinaire, possédant une qualité supérieure de pouvoir ou de vertu, et digne de respect". Cette définition, volontairement large, montre que même des êtres "négatifs" ou inquiétants peuvent être considérés comme kami — un volcan destructeur, une peste, une force redoutable de la nature. Le sacré shintô n'est pas synonyme de bonté morale : il est synonyme de <em>puissance présente</em>.</p>
+    <p>Il existe plusieurs grandes familles de kami : les kami célestes (<em>amatsukami</em>) liés à la mythologie impériale, les kami terrestres (<em>kunitsukami</em>) habitant les paysages, les esprits ancestraux (<em>sorei</em>), et des présences particulières liées à des vocations, des arts ou des phénomènes. Mais cette typologie reste un cadre souple — un même être peut appartenir à plusieurs catégories selon le contexte.</p>
+    <p>Le monde n'est pas un décor créé pour l'humanité. Il est lui-même vivant, peuplé de présences. Nous n'en sommes pas les maîtres — nous en sommes les habitants, au même titre que les arbres, les rivières, les renards, les oiseaux qui chantent à l'aube.</p>
+
+    <div class="callout">
+      Le shintô ne dit pas : "Dieu a créé la nature." Il dit : "La nature est divine."
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">L'immanence</div>
+    <h2>Le sacré est ici, maintenant <span class="jp">内在性</span></h2>
+    <div class="gold-rule"></div>
+    <p>La plupart des grandes religions monothéistes organisent le monde autour d'une <em>transcendance</em> : Dieu est au-dessus du monde, séparé de lui, inaccessible sans médiation. Le shintô est radicalement différent : il est une tradition d'<em>immanence</em>. Le sacré n'est pas au-delà du monde — il est dans le monde, tissé dans chaque être vivant, chaque montagne, chaque souffle de vent.</p>
+    <p>Cette distinction change tout. Elle signifie qu'on n'a pas besoin de sortir du monde pour trouver le sacré. On n'a pas besoin d'un intermédiaire. On n'a pas besoin de croire en des propositions théologiques abstraites. Il suffit de <em>prêter attention</em> — de regarder le monde avec les yeux de quelqu'un qui sait que rien n'est indifférent, que rien n'est vide de sens.</p>
+    <p>Un arbre centenaire mérite le respect, non parce qu'un texte le prescrit, mais parce que sa simple présence — la lenteur de sa croissance, la profondeur de ses racines, le nombre de saisons qu'il a traversées — témoigne d'une force que nous ne pouvons que contempler. Cette logique s'étend à tout : une vieille maison habitée par plusieurs générations porte une présence, une rivière qui a sculpté une vallée porte une présence, un paysage façonné par des siècles de travail humain et naturel porte une présence.</p>
+    <p>L'immanence shintô a des implications pratiques très concrètes : elle transforme le monde ordinaire en un champ de sacralité potentielle. Chaque geste, chaque rencontre, chaque lieu peut être une occasion de contact avec ce qui dépasse — si l'on apprend à regarder.</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Les vertus</div>
+    <h2>Vivre dans la voie <span class="jp">徳</span></h2>
+    <div class="gold-rule"></div>
+    <p>Le shintô n'a pas de commandements. Il n'a pas de liste de péchés. Ce qu'il propose à la place, c'est un ensemble de qualités intérieures à cultiver — pas pour plaire à un dieu, mais parce que ces qualités permettent de vivre en accord avec la voie. Ces vertus ne sont pas des règles à appliquer mécaniquement ; elles sont des orientations intérieures qui se cultivent dans la durée, par la pratique et la réflexion.</p>
+
+    <div class="principles-row">
+      <div class="principle-tag"><span class="jp">誠</span>Makoto — Sincérité</div>
+      <div class="principle-tag"><span class="jp">清</span>Kiyome — Pureté d'intention</div>
+      <div class="principle-tag"><span class="jp">和</span>Wa — Harmonie</div>
+      <div class="principle-tag"><span class="jp">感謝</span>Kansha — Gratitude</div>
+      <div class="principle-tag"><span class="jp">結び</span>Musubi — Connexion vitale</div>
+      <div class="principle-tag"><span class="jp">敬</span>Uyamau — Respect du vivant</div>
+      <div class="principle-tag"><span class="jp">謙</span>Ken — Humilité</div>
+    </div>
+
+    <p><strong>Makoto (誠)</strong> est la première de toutes. Sans sincérité totale, aucune autre vertu ne tient. On peut accomplir tous les rituels du monde ; sans makoto, ils sont du bruit. Makoto implique une cohérence parfaite entre ce que l'on pense, ce que l'on ressent, ce que l'on dit et ce que l'on fait. Ce n'est pas une sincérité de surface — c'est une intégrité d'être. C'est pourquoi le shintô ne demande pas la perfection morale, mais la vérité intérieure : il vaut mieux une imperfection assumée qu'une vertu simulée.</p>
+
+    <p><strong>Kiyome (清)</strong> — la pureté d'intention — est la qualité qui permet à makoto d'opérer. Il ne s'agit pas de pureté au sens rituel ou hygiénique (bien que le shintô valorise aussi cette dimension) ; il s'agit de clarté intérieure, d'absence de motif caché. Agir avec kiyome, c'est agir sans arrière-pensée, sans calcul dissimulé, sans double fond. La pureté ainsi comprise est cousine de la transparence : ce que l'on montre correspond à ce que l'on est.</p>
+
+    <p><strong>Wa (和)</strong> — l'harmonie — n'est pas la capitulation, ni l'évitement du conflit à tout prix. C'est la recherche constante d'un équilibre juste entre les parties d'un tout. Dans une forêt, chaque espèce occupe sa place ; aucune ne domine absolument, aucune n'est absente ; des tensions existent, mais le système dans son ensemble tient debout et prospère. L'harmonie shintô aspire à cela dans la vie humaine : trouver sa juste place dans une écologie plus vaste — familiale, communautaire, naturelle — sans s'effacer, mais sans dominer.</p>
+
+    <p><strong>Kansha (感謝)</strong> — la gratitude profonde — n'est pas une simple politesse. C'est la reconnaissance lucide que nous sommes le fruit d'un réseau infini de dons : la lumière du soleil qui nous a donné notre nourriture, l'eau qui nous a étanché notre soif, les vies animales et végétales qui ont soutenu notre propre vie, les personnes qui nous ont transmis la langue, les gestes, les savoirs. Cultiver le kansha, c'est habiter cette conscience au quotidien — non comme une dette paralysante, mais comme une source d'émerveillement renouvelé.</p>
+
+    <p><strong>Musubi (結び)</strong> — la force de connexion vitale — est sans doute le concept le plus difficile à traduire, et le plus précieux. C'est la force qui relie et fait croître : ce qui permet à une graine de devenir arbre, à deux êtres de former un couple, à un geste sincère de toucher le cœur d'un autre. Ressentir le musubi, c'est sentir que les choses ne sont pas isolées, qu'elles participent d'un tissu vivant. Cultiver le musubi, c'est favoriser, protéger et célébrer cette trame de connexions plutôt que la rompre.</p>
+
+    <p><strong>Uyamau (敬)</strong> — le respect du vivant — est la conséquence directe de la vision des kami. Si le sacré est immanent dans tout être vivant, alors tout être vivant mérite une forme de révérence. Ce n'est pas de l'idolâtrie — c'est de la reconnaissance. L'uyamau ne se limite pas aux humains : il s'étend aux animaux, aux plantes, aux lieux, et même aux objets fabriqués avec soin qui portent en eux le travail d'une vie. Cette extension du respect au-delà du cercle humain est l'une des contributions les plus précieuses du shintô à la pensée contemporaine.</p>
+
+    <p><strong>Ken (謙)</strong> — l'humilité — complète la constellation. Face à l'immensité du vivant, face à la longue chaîne des ancêtres, face à la force des kami, le shintô demande à l'humain de ne pas se prendre pour le centre de tout. L'humilité n'est pas de l'abaissement : c'est la juste mesure de soi, la reconnaissance que l'on est un fragment dans une trame bien plus grande. Elle prévient l'orgueil qui coupe les connexions, l'arrogance qui détruit l'harmonie, la certitude qui tue la sincérité.</p>
+
+    <div class="callout">
+      Ces sept vertus ne sont pas sept règles à cocher. Elles sont sept facettes d'une même orientation intérieure : vivre avec conscience, respect, et présence dans un monde vivant plus vaste que soi.
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Ce qui n'existe pas</div>
+    <h2>L'absence de dogme <span class="jp">無教義</span></h2>
+    <div class="gold-rule"></div>
+    <p>Le shintô originel n'a pas de texte sacré prescriptif au sens biblique. Le Kojiki et le Nihon Shoki sont des recueils mythologiques, pas des codes de conduite. Il n'y a pas de credo, pas de confession de foi, pas d'articles de croyance obligatoires.</p>
+    <p>Il n'y a pas non plus de notion de péché originel, de damnation, de conversion ou d'exclusivité. Le shintô a toujours coexisté avec le bouddhisme — les Japonais ont longtemps pratiqué les deux simultanément sans y voir de contradiction. Aujourd'hui encore, un même Japonais peut se marier dans un sanctuaire shintô, être enterré selon le rite bouddhiste, et fêter Noël sans que cela pose la moindre difficulté. La vérité n'est pas possédée par une institution. Elle est accessible à quiconque s'y approche avec sincérité.</p>
+
+    <div class="callout">
+      Dans le shintô originel, la question n'est pas "Crois-tu ?" mais "Comment vis-tu ?"
+    </div>
+
+    <p>Cette absence de dogme est à la fois une liberté et une responsabilité. Liberté, car elle n'impose pas d'allégeance. Responsabilité, car sans règles extérieures, c'est l'intégrité intérieure — makoto — qui doit tout tenir. Cette caractéristique rend le shintô à la fois exigeant et profondément accessible : exigeant parce qu'il renvoie toujours à la conscience personnelle ; accessible parce qu'il n'exige aucun renoncement intellectuel préalable.</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Les ancêtres</div>
+    <h2>Le lien avec ceux qui nous ont précédés <span class="jp">祖霊</span></h2>
+    <div class="gold-rule"></div>
+    <p>Le culte des ancêtres est une dimension souvent sous-estimée du shintô, largement éclipsée dans l'imaginaire occidental par la figure des kami naturels. Pourtant, honorer ceux qui nous ont précédés — parents, grands-parents, lignées anciennes — est au cœur de la pratique depuis les origines. Les morts ne sont pas disparus : ils rejoignent la communauté des <em>sorei</em> (esprits ancestraux), et, selon une tradition ancienne, peuvent eux-mêmes devenir kami protecteurs de leur lignée après un certain nombre de générations.</p>
+    <p>Cette conception se distingue du culte bouddhiste des ancêtres, plus codifié, mais les deux ont longtemps coexisté dans les foyers japonais. Honorer ses ancêtres selon la sensibilité shintô, c'est reconnaître que l'on n'existe pas seul — que l'on est le fruit d'une longue chaîne d'êtres qui ont vécu, travaillé, aimé, souffert, et dont le travail silencieux nous a permis d'être là.</p>
+    <p>Pour une pratique honnête hors du Japon, cette dimension est immédiatement accessible : tenir vivante la mémoire de ceux qui nous ont précédés, garder une photographie, un objet qui leur appartenait, évoquer leur souvenir aux moments importants — ce sont des gestes d'une profonde continuité avec l'esprit ancestral du shintô.</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">La mort et l'impermanence</div>
+    <h2>Face à la finitude <span class="jp">無常</span></h2>
+    <div class="gold-rule"></div>
+    <p>Le shintô entretient avec la mort un rapport particulier, parfois paradoxal. D'un côté, la mort est la source la plus intense de <em>kegare</em> (impureté spirituelle) — les rituels funéraires japonais relèvent traditionnellement plutôt du bouddhisme que du shintô, précisément parce que le shintô se soucie davantage du vivant. De l'autre, les morts ne sont pas rejetés : ils sont honorés comme ancêtres et peuvent devenir kami.</p>
+    <p>Cette apparente contradiction s'explique par une distinction fine : la mort <em>brute</em>, récente, douloureuse, est reconnue comme un événement qui déstabilise l'équilibre vital et appelle purification. Mais la mort <em>intégrée</em>, honorée dans le temps long de la mémoire, devient une force protectrice. Le shintô ne nie pas la mort ni ne la romantise — il lui donne une place précise dans le cycle de la vie.</p>
+    <p>L'impermanence (<em>mujô</em>, concept partagé avec le bouddhisme) imprègne profondément la sensibilité japonaise : la fragilité des cerisiers qui fleurissent quelques jours, le renouvellement tous les vingt ans du grand sanctuaire d'Ise, la patine du bois qui vieillit. Loin d'être une source de tristesse paralysante, cette conscience de l'éphémère donne aux moments leur intensité. Elle invite à être présent <em>maintenant</em>, parce que c'est maintenant que les choses existent.</p>
+
+    <div class="callout">
+      Rien ne dure. C'est précisément ce qui rend tout précieux.
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Bien et mal</div>
+    <h2>Une éthique sans moralisme <span class="jp">善悪</span></h2>
+    <div class="gold-rule"></div>
+    <p>Le shintô ne pense pas le bien et le mal en termes absolus, dualistes, comme le font certaines traditions monothéistes. Il n'y a pas de Diable, pas d'incarnation du Mal. Les kami eux-mêmes ne sont pas uniformément "bons" : certains sont bienveillants, d'autres capricieux, d'autres redoutables. Susanoo, frère d'Amaterasu, est à la fois kami des tempêtes destructrices et héros vainqueur du serpent à huit têtes — il incarne l'ambivalence même de la puissance.</p>
+    <p>Ce qui compte éthiquement dans le shintô, ce n'est pas de respecter un code moral abstrait, mais de maintenir l'<em>harmonie</em> (wa) et d'agir avec <em>sincérité</em> (makoto). Les actions qui rompent les liens, qui créent du kegare inutile, qui blessent gratuitement le vivant, sont à éviter — non parce qu'un texte les interdit, mais parce qu'elles déséquilibrent la trame dont nous faisons partie.</p>
+    <p>Cette approche éthique a des avantages : elle ne juge pas l'âme des personnes, elle regarde les effets concrets des actions ; elle laisse place au repentir et à la purification ; elle évite le dualisme rigide qui engendre fanatisme et culpabilisation. Elle a aussi des limites : sans code explicite, elle suppose une conscience personnelle forte — ce que makoto exige justement.</p>
+  </div>
+
+  <div class="prev-next">
+    <a class="prev" onclick="switchTab('lexique')">
+      <span class="pn-label">Précédent</span>
+      <span class="pn-title"><span class="pn-kanji">語</span> Lexique</span>
+    </a>
+    <a class="next" onclick="switchTab('pratique')">
+      <span class="pn-label">Suivant</span>
+      <span class="pn-title"><span class="pn-kanji">祈</span> Pratique</span>
+    </a>
+  </div>
+
+</section>
+
+<!-- ============================
+     PRATIQUE
+     ============================ -->
+<section id="tab-pratique" class="tab-section">
+
+  <div class="content-section">
+    <div class="section-label">Préambule</div>
+    <h2>Une pratique honnête hors du Japon <span class="jp">誠の実践</span></h2>
+    <div class="gold-rule"></div>
+    <p>Certaines pratiques shintô sont géographiquement et culturellement liées au Japon : les matsuri d'un sanctuaire précis, les pèlerinages sur des montagnes sacrées spécifiques (<em>reizan</em>), les rituels communautaires de quartier qui n'ont de sens qu'à l'intérieur d'un tissu social japonais. Ces pratiques ne sont pas transposables — et ce serait les trahir que de prétendre les imiter artificiellement. Il ne s'agit pas d'une limite humiliante, mais d'une simple reconnaissance de ce qu'est une tradition : quelque chose de situé, incarné, lié à des terres et à des communautés précises.</p>
+    <p>Mais le cœur de la pratique shintô — la purification, la prière sincère, l'attention au vivant, le respect des transitions saisonnières, la gratitude quotidienne — est universel. Il peut être vécu n'importe où, dans n'importe quelle langue, avec les ressources naturelles de n'importe quel lieu. Cette universalité n'est pas une "dilution" ni un "shintô allégé" : c'est le noyau même d'une tradition qui, à sa source, n'était pas nationale mais <em>relationnelle</em>.</p>
+    <p>Ce qui suit est une pratique adaptée, honnête, qui ne simule pas ce qu'elle ne peut pas être — mais qui tient fermement à ce qu'elle peut être : une relation authentique avec le vivant, animée par la sincérité. Chaque pratique proposée peut être ajustée à votre situation, votre environnement, votre rythme de vie. L'important n'est pas la fidélité à une forme, mais la fidélité à l'intention.</p>
+
+    <div class="callout">
+      La pratique juste n'est pas celle qui imite le plus parfaitement une tradition étrangère. C'est celle qui, inspirée par cette tradition, prend vie dans les circonstances concrètes où vous êtes.
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Purification</div>
+    <h2>Harae et Misogi <span class="jp">祓禊</span></h2>
+    <div class="gold-rule"></div>
+    <p>La purification n'est pas une punition. C'est un entretien — comme on aère une pièce, on renouvelle son lien avec la clarté. Le kegare s'accumule naturellement, sans faute de notre part, du simple fait de vivre ; le harae permet d'en prendre soin régulièrement, avant qu'il ne devienne un poids.</p>
+    <p>Les quatre éléments purificateurs traditionnels du shintô sont l'<em>eau</em> (le plus courant), le <em>sel</em> (dispersé aux seuils ou autour d'un espace à purifier), le <em>feu</em> (flamme de bougie, encens) et le <em>vent</em> (simplement aérer un espace, laisser le souffle traverser). Chacun peut être utilisé selon les circonstances.</p>
+
+    <div class="info-block">
+      <h3>Misogi quotidien — L'eau du matin</h3>
+      <ul>
+        <li>Le matin, avant toute chose, se laver les mains et le visage à l'eau fraîche en portant l'intention de libérer le poids de la nuit. Ce n'est pas un geste mécanique : c'est un geste de transition consciente.</li>
+        <li>Une douche froide ou fraîche pratiquée avec conscience : en entrant dans l'eau, poser l'intention de renaître à la journée, libéré de ce qui alourdit.</li>
+        <li>Quand l'accès à un point d'eau naturel est possible — rivière, source, mer — y poser les mains, laisser l'eau couler sur la peau, et choisir consciemment de laisser partir ce qui pèse.</li>
+        <li>Par temps de pluie : sortir quelques instants, laisser l'eau du ciel toucher le visage. C'est l'un des misogi les plus accessibles et les plus puissants.</li>
+      </ul>
+    </div>
+
+    <div class="info-block">
+      <h3>Harae intérieur — Purification par l'intention</h3>
+      <ul>
+        <li>Avant une prière ou un moment de connexion : trois respirations profondes, en expirant lentement ce qui encombre. Ce geste simple prépare l'espace intérieur.</li>
+        <li>Nettoyer son espace physique est un acte de harae : un intérieur rangé et propre est une invitation au hare. Ce n'est pas du moralisme — c'est de la cohérence entre l'extérieur et l'intérieur.</li>
+        <li>À la fin d'une journée difficile : nommer ce qui a pesé, sans le ruminer — l'écrire si besoin, puis fermer. Ritualiser le dépôt du poids avant le sommeil.</li>
+        <li>Disperser un peu de sel au seuil de la maison, symboliquement, après une période tendue — geste ancien dont on retrouve trace dans les tas de sel aux entrées de restaurants au Japon (<em>morishio</em>).</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Prière</div>
+    <h2>S'adresser aux kami <span class="jp">祈り</span></h2>
+    <div class="gold-rule"></div>
+    <p>Dans un sanctuaire officiel, la gestuelle est codifiée : deux révérences profondes, deux frappements de mains, prière silencieuse, une révérence finale (formule dite <em>ni-rei, ni-hakushu, ippai</em>). Cette forme vient largement du Kokka Shintô et de sa standardisation Meiji. Elle peut être honorée si elle a du sens pour vous — mais elle n'est pas le seul chemin, et elle n'est pas non plus la forme la plus ancienne.</p>
+    <p>Ce qui compte est la <em>qualité de présence</em> que vous apportez. Le japonais n'est pas requis. Aucun kami primitif n'a jamais attendu une langue particulière ; la notion même de "langue sacrée" vient d'époques plus tardives. Ce qu'ils écoutent, selon la sensibilité la plus ancienne, c'est le cœur — makoto.</p>
+
+    <div class="info-block">
+      <h3>Forme de base adaptée</h3>
+      <div class="practice-step">
+        <span class="step-num">一</span>
+        <div class="step-body">
+          <strong>S'arrêter</strong>
+          <p>Sortir du flux de la journée, même pour une minute. Poser ce qu'on était en train de faire. S'immobiliser. Cette rupture du mouvement ordinaire est déjà le premier geste rituel.</p>
+        </div>
+      </div>
+      <div class="practice-step">
+        <span class="step-num">二</span>
+        <div class="step-body">
+          <strong>Se tourner</strong>
+          <p>Vers ce à quoi on s'adresse : un arbre, le ciel, les montagnes, son espace sacré personnel, ou simplement l'espace devant soi. La direction n'a pas besoin d'être géographiquement précise — elle exprime l'orientation intérieure et la disposition à la rencontre.</p>
+        </div>
+      </div>
+      <div class="practice-step">
+        <span class="step-num">三</span>
+        <div class="step-body">
+          <strong>Une révérence</strong>
+          <p>Incliner la tête ou le buste, lentement, sincèrement. Ce geste dit : <em>je reconnais quelque chose qui me dépasse.</em> Il n'est pas de soumission — c'est de l'humilité, une reconnaissance juste des proportions entre soi et ce qui est plus vaste.</p>
+        </div>
+      </div>
+      <div class="practice-step">
+        <span class="step-num">四</span>
+        <div class="step-body">
+          <strong>Deux battements de mains</strong>
+          <p>Doucement, pour signifier sa présence, "appeler" la connexion. Ce son unique dit : <em>je suis là.</em> Le claquement a aussi une fonction purificatrice — il "nettoie" l'espace autour du prieur.</p>
+        </div>
+      </div>
+      <div class="practice-step">
+        <span class="step-num">五</span>
+        <div class="step-body">
+          <strong>La prière</strong>
+          <p>Silencieuse ou murmurée, dans votre langue, avec vos mots. Ce peut être une gratitude, une demande d'harmonie, un aveu, ou simplement : <em>"Je suis là. Je reconnais ta présence. Merci."</em> La durée importe peu. La sincérité, oui. Évitez les formulations trop ambitieuses ou calculées — plus c'est simple, plus c'est vrai.</p>
+        </div>
+      </div>
+      <div class="practice-step">
+        <span class="step-num">六</span>
+        <div class="step-body">
+          <strong>Une révérence finale</strong>
+          <p>Pour refermer le moment, marquer la transition entre l'espace sacré et l'espace ordinaire. Le rituel a un début et une fin clairs — c'est cette structure qui le rend efficace.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      Une prière sincère de dix secondes vaut plus qu'un rituel d'une heure accompli par habitude ou par peur de mal faire.
+    </div>
+
+    <p>Il n'est pas nécessaire de prier tous les jours, ni de prier pour quelque chose de précis. La prière shintô peut être simplement un moment de reconnaissance — "tu es là, je suis là, merci". Elle peut aussi accompagner des transitions de vie : un début de projet, une décision importante, un deuil, une joie. Écoutez ce qui appelle une prière et répondez-y sans forcer.</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Espace sacré</div>
+    <h2>Le sanctuaire personnel <span class="jp">神棚</span></h2>
+    <div class="gold-rule"></div>
+    <p>Le kamidana est un espace dans la maison dédié à la connexion avec le sacré. Dans sa forme institutionnelle, il contient des tablettes (<em>ofuda</em>) achetées dans des sanctuaires officiels. Dans sa forme sincère et adaptée, il peut être composé d'objets naturels qui ont du sens pour vous — des objets qui vous rappellent le sacré immanent et ancrent cette conscience dans votre quotidien.</p>
+    <p>L'espace sacré n'est pas un objet magique. C'est un <em>rappel</em> — une présence physique qui vous ramène régulièrement à l'orientation intérieure que vous cultivez. Son utilité principale est cette fonction d'ancrage : chaque fois que votre regard le croise, il vous rappelle qui vous cherchez à être.</p>
+
+    <div class="info-block">
+      <h3>Composer son espace</h3>
+      <ul>
+        <li>Choisir une surface stable, propre, de préférence en hauteur — une étagère, un rebord de fenêtre orienté vers la nature si possible</li>
+        <li>Une pierre ramassée dans un lieu naturel qui vous appartient au sens du cœur</li>
+        <li>Un petit bol d'eau pure, renouvelée chaque matin — offrande de vie</li>
+        <li>Du sel ou du riz dans une coupelle — symboles de pureté et d'abondance</li>
+        <li>Une bougie ou de l'encens (bois de cèdre, pin, santal — proches de l'esthétique shintô)</li>
+        <li>Ce qui vous touche personnellement : un objet naturel chargé de sens, une image d'un lieu qui vous est sacré, une plume, une branche de l'arbre sous lequel vous vous êtes recueilli une fois</li>
+      </ul>
+    </div>
+
+    <div class="info-block">
+      <h3>Orientation et entretien</h3>
+      <ul>
+        <li>Traditionnellement, le kamidana est orienté vers le sud ou l'est — directions associées à la lumière et au renouveau. Adaptez selon votre espace ; ce qui compte est que l'emplacement vous semble juste.</li>
+        <li>Garder l'espace propre est essentiel — la poussière accumulée est une forme de kegare. Un geste de nettoyage régulier, même rapide, fait partie de la pratique.</li>
+        <li>Renouveler l'eau chaque matin — ce geste simple est l'un des plus importants. Il marque que l'on honore ce lieu quotidiennement, pas seulement lors d'occasions exceptionnelles.</li>
+        <li>Le soir, on peut baisser l'intensité ou fermer visuellement l'espace (un tissu, un rideau) pour marquer la transition vers le repos.</li>
+      </ul>
+    </div>
+
+    <p>L'espace n'a pas besoin d'être grand. Il doit être <em>intentionnel</em>. Passer devant chaque matin — même brièvement — pour renouveler l'eau, incliner la tête, dire merci. C'est assez. C'est même, dans sa régularité humble, la pratique la plus solide que l'on puisse bâtir.</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Offrandes</div>
+    <h2>Shinsen — Le geste du don <span class="jp">神饌</span></h2>
+    <div class="gold-rule"></div>
+    <p>Les offrandes aux kami (<em>shinsen</em>) sont un élément central du shintô. Dans les sanctuaires, elles sont ritualisées : riz, eau, sel, saké, poissons, légumes, fruits, disposés avec soin selon un ordre précis. Mais l'esprit de l'offrande est plus simple qu'il n'y paraît : <em>donner quelque chose en reconnaissance de ce qu'on a reçu</em>.</p>
+    <p>Contrairement à une idée fausse, l'offrande n'achète rien aux kami. Elle n'est pas un contrat ni un pot-de-vin. C'est un geste de gratitude matérialisée, une façon de faire circuler la reconnaissance plutôt que de la garder pour soi.</p>
+
+    <div class="info-block">
+      <h3>Offrandes adaptées à la vie hors du Japon</h3>
+      <ul>
+        <li><strong>L'eau pure</strong> — l'offrande la plus fondamentale et universelle. Un bol d'eau fraîche chaque matin, renouvelée avec attention.</li>
+        <li><strong>Une fleur ou une branche</strong> — surtout cueillie respectueusement dans un lieu qui a du sens pour vous (jamais protégé)</li>
+        <li><strong>Du sel, du riz, un fruit</strong> — des offrandes alimentaires simples, fraîches, que l'on peut ensuite consommer soi-même après un temps d'exposition (ce partage symbolise le lien)</li>
+        <li><strong>Un objet façonné avec soin</strong> — quelque chose qu'on a fait soi-même, qui porte la trace d'un effort sincère</li>
+        <li><strong>Un temps de présence</strong> — rester simplement devant l'espace sacré, en silence, sans téléphone, sans distraction. Le temps est l'offrande la plus rare et la plus précieuse.</li>
+      </ul>
+    </div>
+
+    <p>L'offrande ne doit jamais être luxueuse ni démonstrative. L'humilité est centrale : mieux vaut une goutte d'eau donnée avec makoto qu'une mise en scène sans cœur.</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Les saisons</div>
+    <h2>Célébrer les transitions <span class="jp">四季</span></h2>
+    <div class="gold-rule"></div>
+    <p>Le shintô est profondément rythmé par les saisons. Non par un calendrier fixe de fêtes officielles imposées d'en haut, mais par la reconnaissance des grandes transitions naturelles qui marquent la circulation du vivant. Le shintô japonais a codifié de nombreuses fêtes saisonnières (Hatsumode pour le nouvel an, Setsubun pour la sortie de l'hiver, Obon l'été…), mais leur esprit profond, adaptable partout, tient en un principe simple : <em>marquer les seuils</em>.</p>
+    <p>Voici quatre moments forts, universellement accessibles, sur lesquels s'appuyer :</p>
+
+    <div class="seasons-grid">
+      <div class="season-card">
+        <div class="season-jp">冬</div>
+        <div class="season-label">HIVER — Solstice de décembre</div>
+        <p>Temps du retrait et de la contemplation. Honorer l'obscurité comme condition du retour de la lumière. Allumer une bougie, se recueillir, nommer ce que l'on veut laisser partir avec l'année. C'est le moment du silence, de l'introspection, du repos fertile.</p>
+      </div>
+      <div class="season-card">
+        <div class="season-jp">春</div>
+        <div class="season-label">PRINTEMPS — Équinoxe de mars</div>
+        <p>Le retour du vivant. Aller dans la nature, observer la reprise — insectes, bourgeons, premiers chants. Exprimer sa gratitude pour ce renouveau. Planter quelque chose si possible. C'est le moment des commencements, des intentions neuves.</p>
+      </div>
+      <div class="season-card">
+        <div class="season-jp">夏</div>
+        <div class="season-label">ÉTÉ — Solstice de juin</div>
+        <p>Le pic du vivant. Honorer l'énergie du monde à son comble. Si possible, purification par l'eau naturelle — rivière, mer, source. Passer du temps dehors à l'aube ou au crépuscule. C'est le moment de la plénitude, de l'abondance lumineuse.</p>
+      </div>
+      <div class="season-card">
+        <div class="season-jp">秋</div>
+        <div class="season-label">AUTOMNE — Équinoxe de septembre</div>
+        <p>La gratitude pour ce qui a été donné. Observer la transformation comme un accomplissement, non une perte. Remercier explicitement — les lieux, les êtres, le vivant de l'année écoulée. C'est le moment du bilan, de la maturité, de la reconnaissance.</p>
+      </div>
+    </div>
+
+    <p>En dehors de ces quatre moments, le premier jour de chaque mois peut être marqué d'un geste simple : renouveler l'eau de son espace sacré, faire une prière un peu plus longue, sortir dans la nature si possible. Les Japonais appellent <em>tsuitachi-mairi</em> la tradition de visiter un sanctuaire le premier jour du mois.</p>
+    <p>Autre rythme utile : observer les transformations du lieu où vous vivez au fil des semaines. Les feuilles qui changent, les oiseaux qui reviennent ou partent, la lumière qui se déplace. Tenir une sorte de journal saisonnier, même bref, ancre profondément la conscience du vivant et fait partie intégrante d'une pratique shintô sincère.</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">La nourriture</div>
+    <h2>Manger comme un acte sacré <span class="jp">食</span></h2>
+    <div class="gold-rule"></div>
+    <p>Peu d'actes sont aussi quotidiens et aussi chargés que manger. Dans le shintô, la nourriture n'est jamais neutre : elle est le résultat d'une chaîne de vies qui se sont données ou transformées pour soutenir la nôtre. La conscience de cette chaîne transforme le repas en une petite cérémonie.</p>
+    <p>L'expression <em>itadakimasu</em> (いただきます), prononcée avant chaque repas, est souvent traduite par "bon appétit" — c'est une erreur. Elle signifie littéralement "je reçois humblement", et reconnaît explicitement le don qui est fait : la plante ou l'animal dont on se nourrit, le travail de ceux qui ont cultivé et préparé, les forces naturelles qui ont permis à la nourriture d'exister.</p>
+    <p>À la fin du repas, <em>gochisōsama deshita</em> (ごちそうさまでした) referme la cérémonie : "cela fut un festin" — gratitude adressée à tout ce qui a rendu le repas possible.</p>
+
+    <div class="info-block">
+      <h3>Une pratique simple et adaptable</h3>
+      <ul>
+        <li>Avant de manger, marquer une courte pause — quelques secondes suffisent. Regarder ce qui est dans l'assiette. Reconnaître intérieurement ce que l'on reçoit.</li>
+        <li>Un mot, dans sa langue : "merci", "je reçois", ou rien — juste la conscience. Si <em>itadakimasu</em> a du sens pour vous, rien ne vous empêche de l'utiliser ; si cela vous semble affecté, votre propre formulation est parfaite.</li>
+        <li>Manger sans écran si possible, au moins parfois. L'attention à ce que l'on mange est une forme d'honneur rendu à la nourriture.</li>
+        <li>Ne pas gaspiller — le gaspillage alimentaire, dans la sensibilité shintô, est une forme de manque de respect envers les vies qui se sont données.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Rythme quotidien</div>
+    <h2>Le fil des jours <span class="jp">日常</span></h2>
+    <div class="gold-rule"></div>
+    <p>La pratique quotidienne n'est pas une contrainte supplémentaire ajoutée à une vie déjà chargée. Elle est une façon d'<em>habiter différemment</em> ce qu'on ferait de toute façon — se laver, manger, se coucher. Quelques minutes cumulées dans la journée suffisent à transformer l'orientation générale de l'existence.</p>
+
+    <div class="info-block">
+      <h3>Le matin — Hare (clarté)</h3>
+      <ul>
+        <li>Misogi : se laver les mains et le visage à l'eau fraîche avec intention — libérer le poids de la nuit</li>
+        <li>Devant son espace sacré : renouveler l'eau, une révérence, quelques mots de gratitude</li>
+        <li>Si possible : sortir un instant, observer le ciel, l'air, la lumière. Nommer intérieurement ce qui est beau.</li>
+        <li>Poser une intention pour la journée — pas un objectif, une orientation. "Aujourd'hui, je veux rester présent" ou "Aujourd'hui, je veux agir avec makoto."</li>
+      </ul>
+    </div>
+
+    <div class="info-block">
+      <h3>Dans la journée — Kannagara (la voie)</h3>
+      <ul>
+        <li>Faire les choses avec soin — même les gestes ordinaires. Le soin est une forme de prière. La vaisselle faite avec attention, la porte fermée avec douceur, le mail écrit avec précision — tout cela est la pratique.</li>
+        <li>Avant les repas : <em>itadakimasu</em> — "je reçois humblement". Reconnaître que la vie que l'on prend nourrit la vie que l'on est.</li>
+        <li>Devant un beau vivant — un arbre ancien, un oiseau, une lumière inhabituelle — s'arrêter une seconde et reconnaître.</li>
+        <li>Lors d'une tension ou d'une émotion difficile : trois respirations conscientes. Cette micro-purification suffit souvent à ne pas être emporté.</li>
+      </ul>
+    </div>
+
+    <div class="info-block">
+      <h3>Le soir — Kegare (libération)</h3>
+      <ul>
+        <li>Quelques instants de silence avant de dormir</li>
+        <li>Identifier ce qui a alourdi la journée, et choisir de le déposer — ne pas le porter dans le sommeil</li>
+        <li>Une pensée de gratitude pour ce que la journée a contenu de vrai, même petit</li>
+        <li>Une pensée pour les personnes aimées, proches ou lointaines — même silencieuse, elle cultive le musubi</li>
+      </ul>
+    </div>
+
+    <div class="callout">
+      La pratique n'est pas ce que vous ajoutez à votre vie. C'est la qualité d'attention que vous apportez à ce qu'elle contient déjà.
+    </div>
+  </div>
+
+  <div class="prev-next">
+    <a class="prev" onclick="switchTab('fondements')">
+      <span class="pn-label">Précédent</span>
+      <span class="pn-title"><span class="pn-kanji">神</span> Fondements</span>
+    </a>
+    <a class="next" onclick="switchTab('chemin')">
+      <span class="pn-label">Suivant</span>
+      <span class="pn-title"><span class="pn-kanji">心</span> Le Chemin</span>
+    </a>
+  </div>
+
+</section>
+
+<!-- ============================
+     LE CHEMIN
+     ============================ -->
+<section id="tab-chemin" class="tab-section">
+
+  <div class="content-section">
+    <div class="section-label">La question de légitimité</div>
+    <h2>Suis-je un imposteur ? <span class="jp">正当性</span></h2>
+    <div class="gold-rule"></div>
+    <p>C'est la question que se posent presque tous ceux qui s'intéressent sincèrement au shintô sans être japonais. Elle mérite une réponse honnête, nuancée, et qui ne dilue ni l'inquiétude ni la possibilité.</p>
+    <p>Il y a une différence fondamentale entre <em>l'appropriation culturelle</em> et la <em>résonance sincère</em>. L'appropriation prend sans comprendre, sans respect, sans relation — elle consomme une culture comme un décor, en extrait des éléments esthétiques détachés de leur contexte pour s'en parer. La résonance sincère reconnaît quelque chose de profondément vrai dans une tradition et cherche à s'en approcher avec humilité, respect, et travail de compréhension.</p>
+    <p>Le fait même de se poser la question de l'imposture est un marqueur de sincérité. Un imposteur ne se la pose pas ; un appropriateur superficiel non plus. Cette inquiétude est le signe qu'une conscience est à l'œuvre.</p>
+
+    <div class="callout">
+      "Être japonais" n'est pas une condition du shintô originel. Le shintô primitif était une relation entre des humains et leur environnement naturel — relation universellement accessible à quiconque se tourne vers elle avec sincérité et respect.
+    </div>
+
+    <p>Il faut cependant être honnête sur ce que l'on ne peut pas être. On ne peut pas être membre d'une communauté de sanctuaire dont on n'est pas originaire. On ne peut pas participer de l'intérieur à des matsuri liés à des lieux et des histoires que l'on ne partage pas. On ne peut pas, du jour au lendemain, comprendre les subtilités d'une tradition qui s'est construite sur des millénaires dans une langue et un contexte qui ne sont pas les nôtres. Nommer ces limites avec clarté n'est pas de la résignation — c'est de l'intégrité.</p>
+    <p>Il y a néanmoins un immense espace entre "je ne peux pas tout faire" et "je ne peux rien faire". Dans cet espace se trouve la pratique sincère, respectueuse et adaptée — celle qui reconnaît ce qu'elle doit à la tradition sans prétendre l'incarner tout entière.</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Ce que signifie pratiquer</div>
+    <h2>La pratique comme façon d'être <span class="jp">実践の本質</span></h2>
+    <div class="gold-rule"></div>
+    <p>Une erreur fréquente est de penser la pratique comme quelque chose que l'on fait <em>à côté</em> de la vie — un rituel du matin, une prière hebdomadaire, une case à cocher. Dans le shintô, la pratique est une façon d'<em>habiter</em> la vie, pas une activité parmi d'autres. Les rituels ne sont pas la pratique ; ils sont des rappels qui permettent à la pratique, plus vaste, de continuer.</p>
+    <p>Cela signifie que la façon dont vous regardez un arbre est de la pratique. La façon dont vous traitez un animal est de la pratique. La façon dont vous faites la vaisselle, dont vous accueillez un inconnu, dont vous répondez à quelque chose de beau — tout cela est la pratique, ou ne l'est pas. Le shintô ne sépare pas le "religieux" du "quotidien" : il infuse le quotidien d'attention.</p>
+    <p>Un rituel quotidien n'a de valeur que s'il <em>nourrit</em> cette façon d'être — s'il la rappelle, l'approfondit, lui donne un ancrage. S'il n'est qu'une habitude vide, il n'est rien. Et si, au contraire, vous vivez avec makoto, uyamau et kansha sans aucun rituel formel, vous êtes dans la pratique plus profondément que beaucoup de fidèles réguliers.</p>
+
+    <div class="info-block">
+      <h3>Ce que la pratique n'est pas</h3>
+      <ul>
+        <li>Performer le Japon — adopter une langue, une esthétique, une identité qui ne sont pas les vôtres pour paraître plus authentique</li>
+        <li>Collectionner des objets rituels comme des trophées ou des preuves d'appartenance</li>
+        <li>Se construire une identité autour du shintô plutôt que de laisser le shintô transformer discrètement sa façon d'être</li>
+        <li>Chercher à convertir les autres ou à prouver quelque chose à qui que ce soit</li>
+        <li>Juger ceux qui ne partagent pas cette sensibilité — le prosélytisme est étranger à l'esprit shintô</li>
+        <li>Transformer la pratique en performance esthétique destinée aux réseaux sociaux</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">La nature comme sanctuaire</div>
+    <h2>Votre lieu, vos kami <span class="jp">自然の御社</span></h2>
+    <div class="gold-rule"></div>
+    <p>Les premiers sanctuaires shintô n'étaient pas des bâtiments. Ils étaient des espaces naturels reconnus comme habités — une montagne, un bosquet, une source, une falaise. Les bâtiments sont venus plus tard pour abriter les fidèles pendant les cérémonies. Mais les kami eux-mêmes n'avaient besoin d'aucun bâtiment. Ils habitaient déjà le lieu.</p>
+    <p>Où que vous soyez dans le monde, il y a des lieux naturels qui ont une présence. Des arbres anciens. Des sources. Des sommets. Des lisières de forêt à l'aube. Ces lieux sont des shintai potentiels — des corps dans lesquels une présence sacrée peut résider. Les reconnaître ne demande pas une initiation spéciale, seulement de l'attention et du temps.</p>
+    <p>Choisissez un lieu naturel qui vous appartient au sens du cœur. Revenez-y régulièrement — c'est la régularité qui construit la relation. Apprenez-y la différence entre l'ordinaire et ce qui est chargé. Observez comment ce lieu change avec les saisons, avec les heures, avec la météo. Cette relation durable avec un lieu, c'est déjà une forme de pratique très ancienne, antérieure à tout sanctuaire construit.</p>
+
+    <div class="info-block">
+      <h3>Principes pour une relation juste avec un lieu</h3>
+      <ul>
+        <li>Arriver en silence, s'annoncer intérieurement, demander mentalement la permission d'entrer</li>
+        <li>Ne rien prélever qui ne soit évident (pas de fleur rare, pas de racine, pas de pierre particulière sans raison)</li>
+        <li>Ne laisser aucune trace — pas de détritus, pas de marquage</li>
+        <li>Offrir quelque chose à l'occasion : quelques gouttes d'eau, une pensée de gratitude, un peu de son temps en présence silencieuse</li>
+        <li>Avant de quitter le lieu, une révérence, un mot intérieur de remerciement</li>
+        <li>Ne pas parler de ce lieu à tout le monde. Certains lieux sacrés gardent leur force d'être peu connus.</li>
+      </ul>
+    </div>
+
+    <p>Cette pratique, entièrement accessible partout, est peut-être la plus profonde de toutes. Elle reconnecte au plus ancien substrat du shintô — bien avant les textes, les sanctuaires, les codes — à l'époque où les humains reconnaissaient simplement que certains lieux étaient vivants d'une vie plus qu'humaine.</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Coexistence</div>
+    <h2>Shintô et autres traditions <span class="jp">共存</span></h2>
+    <div class="gold-rule"></div>
+    <p>Une question légitime se pose souvent : puis-je m'intéresser sincèrement au shintô tout en ayant une autre tradition d'origine, ou en cherchant également dans d'autres voies ? La réponse du shintô lui-même, historiquement, est claire : oui, absolument.</p>
+    <p>Le shintô a toujours coexisté avec le bouddhisme, le confucianisme, et plus récemment avec le christianisme (présent au Japon depuis le XVIe siècle). Cette capacité à coexister n'est pas de la tiédeur : c'est une conviction profonde que la vérité n'est pas exclusive, que plusieurs voies peuvent mener à une vie juste, et que nul n'a le monopole du sacré.</p>
+    <p>Pour qui vient d'une tradition chrétienne, juive, musulmane, bouddhiste, ou d'une sensibilité laïque, le shintô peut enrichir sans remplacer. Beaucoup trouvent dans ses pratiques un complément concret, incarné, immédiat — une façon de donner une forme quotidienne à ce qu'ils ressentent déjà dans d'autres registres.</p>
+    <p>Les points de résonance avec d'autres traditions sont nombreux : le respect franciscain pour "frère loup et sœur eau", l'attention soufie à la présence divine dans toute chose, certaines spiritualités autochtones qui reconnaissent le sacré des lieux, la pensée écologique profonde de penseurs comme Arne Næss. Reconnaître ces parentés n'est pas brouiller les frontières — c'est reconnaître que certaines intuitions fondamentales sur le vivant traversent les cultures.</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Les écueils</div>
+    <h2>Ce qu'il faut éviter <span class="jp">落とし穴</span></h2>
+    <div class="gold-rule"></div>
+    <p>Tout chemin spirituel a ses écueils. Nommer ceux qui guettent particulièrement la voie du shintô sincère permet de mieux les éviter.</p>
+
+    <div class="info-block">
+      <h3>Les dérives courantes</h3>
+      <ul>
+        <li><strong>L'esthétisation</strong> — se laisser captiver par la beauté visuelle (torii rouges, kimonos, sanctuaires dans la brume) au point d'oublier la substance. L'esthétique est une porte d'entrée légitime ; elle devient un piège quand elle remplace le fond.</li>
+        <li><strong>Le mimétisme</strong> — copier méticuleusement des gestes, des objets, des attitudes japonaises sans les comprendre. La pratique devient alors un costume.</li>
+        <li><strong>Le "new age"</strong> — réduire le shintô à une sorte de wellness spirituel vague, en piochant ce qui plaît et en ignorant ce qui dérange. Le shintô n'est pas une méthode de développement personnel.</li>
+        <li><strong>Le rigorisme</strong> — se construire une liste de règles strictes et se juger soi-même ou les autres sur leur respect. Le shintô demande de la sincérité, pas de la perfection performée.</li>
+        <li><strong>La quête de validation</strong> — chercher la reconnaissance d'une autorité japonaise ou d'une communauté pour se sentir légitime. La légitimité vient du makoto, pas d'un cachet extérieur.</li>
+        <li><strong>L'isolement spirituel</strong> — se couper des relations humaines sous prétexte de solitude contemplative. Le shintô honore la communauté autant que la solitude ; les deux doivent rester présentes.</li>
+        <li><strong>L'idéologie</strong> — transformer une sensibilité en militantisme. Le shintô authentique n'a pas besoin de combattre qui que ce soit.</li>
+      </ul>
+    </div>
+
+    <p>Aucun de ces écueils n'est définitif. Ils se présentent à tous, à différents moments du chemin. Les reconnaître quand ils arrivent suffit généralement à les traverser sans dommage.</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Pour aller plus loin</div>
+    <h2>Lectures et ressources <span class="jp">参考</span></h2>
+    <div class="gold-rule"></div>
+    <p>Si ce document a ouvert des portes, voici quelques ressources pour approfondir. Elles ont été sélectionnées pour leur sérieux, leur honnêteté, et leur capacité à parler à un lecteur qui n'est pas spécialiste.</p>
+
+    <div class="info-block">
+      <h3>Ouvrages fondamentaux</h3>
+      <ul>
+        <li><strong>Sokyo Ono, <em>Shinto: The Kami Way</em></strong> — introduction classique, brève, par un universitaire japonais. Probablement la meilleure porte d'entrée.</li>
+        <li><strong>Motohisa Yamakage, <em>The Essence of Shinto</em></strong> — approfondissement plus spirituel, par un maître contemporain du Yamakage Shintô.</li>
+        <li><strong>Jean Herbert, <em>Aux sources du Japon : le shintô</em></strong> — vaste somme en français, précieuse bien que datée, pour qui veut aller dans le détail.</li>
+        <li><strong>Tanizaki Junichirô, <em>Éloge de l'ombre</em></strong> — pas un livre sur le shintô, mais une méditation sur l'esthétique japonaise de la pénombre, du ma, de la patine — essentiel pour sentir la sensibilité dont le shintô fait partie.</li>
+        <li><strong>Yanagi Sōetsu, <em>The Unknown Craftsman</em></strong> (ou en français <em>Artisan inconnu</em>) — sur la beauté des objets du quotidien et la valeur du travail humble. Proche de l'esprit shintô sans en traiter directement.</li>
+      </ul>
+    </div>
+
+    <div class="info-block">
+      <h3>Approfondissement historique</h3>
+      <ul>
+        <li><strong>John Breen et Mark Teeuwen, <em>A New History of Shinto</em></strong> — synthèse universitaire moderne, essentielle pour comprendre les déformations historiques et la construction du Kokka Shintô.</li>
+        <li><strong>Helen Hardacre, <em>Shinto: A History</em></strong> — autre référence universitaire récente, exhaustive et rigoureuse.</li>
+      </ul>
+    </div>
+
+    <div class="info-block">
+      <h3>Résonances proches</h3>
+      <ul>
+        <li><strong>Marc-Alain Ouaknin, <em>Le livre brûlé</em></strong> — sur la relation entre texte et silence, résonnant avec le ma japonais</li>
+        <li><strong>Gary Snyder, <em>The Practice of the Wild</em></strong> — poète américain profondément influencé par les spiritualités asiatiques, écologiste avant l'heure</li>
+        <li><strong>Robert Harrison, <em>Forêts : essai sur l'imaginaire occidental</em></strong> — le rapport occidental à la forêt, en miroir utile du rapport japonais</li>
+      </ul>
+    </div>
+
+    <p>Aucune lecture ne remplace la pratique. Mais les lectures justes, au bon moment, peuvent éclairer le chemin et donner des mots à ce que l'on commence à ressentir.</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Dernier mot</div>
+    <h2>Ce que vous faites peut-être déjà <span class="jp">すでにある</span></h2>
+    <div class="gold-rule"></div>
+    <p>Si vous êtes arrivé jusqu'ici, c'est probablement parce que quelque chose dans ce document résonne avec quelque chose que vous ressentez depuis longtemps — quelque chose que vous n'arriviez pas à nommer.</p>
+    <p>Ce mémoire n'a pas créé quelque chose de nouveau en vous. Il a peut-être mis des mots sur quelque chose qui existait déjà : une attention particulière à la nature, un sentiment du sacré dans le vivant, une résistance au bruit du monde et à sa superficialité, un désir de relation juste avec ce qui vous entoure.</p>
+    <p>Si c'est le cas, le chemin est déjà commencé. Ce qui reste à faire, c'est de marcher dessus avec conscience, avec soin, et avec la sincérité que le shintô appelle makoto. Sans hâte, sans bruit, sans se presser d'y mettre un nom définitif. La voie se précise en étant suivie, pas en étant proclamée.</p>
+
+    <div class="callout">
+      Vous n'avez pas besoin d'un titre, d'une initiation, ni d'un pays particulier. Vous avez besoin d'un regard attentif, d'un cœur sincère, et de la volonté de vous comporter avec respect envers ce monde vivant dont vous faites partie.
+    </div>
+
+    <p>C'est tout. Et c'est immense.</p>
+    <p>Si ce document vous a été utile, gardez-le, partagez-le à qui cela pourrait toucher, et surtout — vivez ce qu'il propose plutôt que de seulement le lire. La voie n'est pas dans les pages. Elle est dans vos pas.</p>
+  </div>
+
+  <div class="prev-next">
+    <a class="prev" onclick="switchTab('pratique')">
+      <span class="pn-label">Précédent</span>
+      <span class="pn-title"><span class="pn-kanji">祈</span> Pratique</span>
+    </a>
+    <a class="next" onclick="switchTab('preface')">
+      <span class="pn-label">Retour au début</span>
+      <span class="pn-title"><span class="pn-kanji">縁</span> Préface</span>
+    </a>
+  </div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-kanji">ありがとう</div>
+  <p>Gratitude pour ce qui est. Respect pour ce qui vit. Sincérité dans chaque geste.</p>
+  <p style="margin-top:12px; font-size:13px;">Ce document est libre de partage — sans modification, sans usage commercial.</p>
+</footer>
+
+<!-- BACK TO TOP BUTTON -->
+<button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Retour en haut de la page" title="Retour en haut">↑</button>
+
+<!-- JAVASCRIPT -->
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('nav button').forEach(b => {
+    b.classList.remove('active');
+    b.setAttribute('aria-selected', 'false');
+  });
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+  btn.setAttribute('aria-selected', 'true');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Used by prev/next links — finds the right nav button and activates it
+function switchTab(id) {
+  const buttons = document.querySelectorAll('nav button');
+  const map = {
+    'preface': 0,
+    'histoire': 1,
+    'lexique': 2,
+    'fondements': 3,
+    'pratique': 4,
+    'chemin': 5
+  };
+  const btn = buttons[map[id]];
+  if (btn) showTab(id, btn);
+}
+
+function toggleLex(item) {
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.lexique-item').forEach(i => i.classList.remove('open'));
+  if (!wasOpen) item.classList.add('open');
+}
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Show/hide back-to-top button based on scroll
+const backToTopBtn = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 400) {
+    backToTopBtn.classList.add('visible');
+  } else {
+    backToTopBtn.classList.remove('visible');
+  }
+});
+</script>
+
+</body>
+</html>
