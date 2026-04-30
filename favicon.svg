@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Fond sombre cohérent avec la charte du site -->
+  <rect width="64" height="64" rx="6" fill="#1a1a1a"/>
+
+  <!-- Torii stylisé en doré, plus épais pour visibilité à 16x16 -->
+  <g stroke="#d4a657" stroke-linecap="round" fill="none">
+    <!-- Linteau supérieur (kasagi) avec courbure -->
+    <path d="M 6 16 Q 32 8, 58 16" stroke-width="5"/>
+    <!-- Linteau inférieur (nuki) -->
+    <line x1="10" y1="26" x2="54" y2="26" stroke-width="4"/>
+    <!-- Pilier gauche (hashira) -->
+    <line x1="16" y1="14" x2="16" y2="58" stroke-width="5"/>
+    <!-- Pilier droit (hashira) -->
+    <line x1="48" y1="14" x2="48" y2="58" stroke-width="5"/>
+  </g>
+</svg>

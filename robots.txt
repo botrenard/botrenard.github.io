@@ -1,0 +1,67 @@
+# robots.txt — vivre-shinto.fr
+# Politique d'exploration pour les robots d'indexation
+
+User-agent: *
+Allow: /
+Disallow:
+
+# Sitemap
+Sitemap: https://vivre-shinto.fr/sitemap.xml
+
+# Robots majeurs : explorer tout le site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Robots IA — politique d'autorisation
+# Autoriser les robots IA pour valoriser le contenu mais préserver l'attribution
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Bloquer les bots indésirables / scrapers agressifs
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Crawl-delay général pour ne pas surcharger le serveur
+Crawl-delay: 1
