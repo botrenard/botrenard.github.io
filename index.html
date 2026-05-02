@@ -880,53 +880,6 @@ footer .footer-kanji {
   }
 }
 
-/* ========== GOOGLE TRANSLATE WIDGET ========== */
-#translate-container {
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  z-index: 1000;
-  background: rgba(20, 20, 22, 0.85);
-  backdrop-filter: blur(6px);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 6px 10px;
-  font-size: 12px;
-}
-
-#translate-container .goog-te-gadget {
-  font-family: 'Cinzel', 'EB Garamond', serif !important;
-  font-size: 12px !important;
-  color: var(--text-soft) !important;
-}
-
-#translate-container .goog-te-gadget-simple {
-  background: transparent !important;
-  border: none !important;
-  color: var(--cream) !important;
-  padding: 0 !important;
-  font-size: 12px !important;
-}
-
-#translate-container .goog-te-gadget-simple span,
-#translate-container .goog-te-gadget-simple a {
-  color: var(--cream) !important;
-  border: none !important;
-}
-
-/* Empêche la barre Google de pousser la page */
-body { top: 0 !important; }
-.goog-te-banner-frame { display: none !important; }
-
-@media (max-width: 600px) {
-  #translate-container {
-    top: 10px;
-    right: 10px;
-    padding: 4px 8px;
-    font-size: 11px;
-  }
-}
-
 /* ========== PREV / NEXT NAVIGATION ========== */
 .prev-next {
   display: flex;
@@ -4214,11 +4167,6 @@ body { top: 0 !important; }
 <!-- BACK TO TOP BUTTON -->
 <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Retour en haut de la page" title="Retour en haut">↑</button>
 
-<!-- TRANSLATION WIDGET -->
-<div id="translate-container" aria-label="Traduire cette page">
-  <div id="google_translate_element"></div>
-</div>
-
 <!-- JAVASCRIPT -->
 <script>
 function showTab(id, btn) {
@@ -4275,34 +4223,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Google Translate — initialisation du widget de traduction multilingue
-function revealContact(el) {
-  // Email obfusqué : reconstruction par concaténation côté client
-  // Les bots qui parsent simplement le HTML ne voient pas l'adresse complète
-  // ⚠️ Remplace ces variables par tes vraies coordonnées avant publication
-  const u = 'contact';
-  const d = 'vivre-shinto';
-  const t = 'fr';
-  const email = u + '\u0040' + d + '.' + t;
-  el.innerHTML = email;
-  el.removeAttribute('onclick');
-  el.removeAttribute('onkeypress');
-  el.setAttribute('href', 'mailto:' + email);
-  el.style.cursor = 'text';
-  // Conversion en vrai lien <a>
-  el.outerHTML = '<a class="contact-link" href="mailto:' + email + '">' + email + '</a>';
-}
-
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'fr',
-    includedLanguages: 'en,es,it,de,pt,ja,zh-CN,ru,ar,ko,nl,pl',
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-    autoDisplay: false
-  }, 'google_translate_element');
-}
 </script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
 
 </body>
 </html>
